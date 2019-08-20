@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="FzWjScJ">
+    <meta name="author" content="FzWjScJ">
+    <meta name="keywords" content="“在CTF上越变越菜的萌旧”">
+    <title>Hgame--week4--菜鸡每天飞过 ~ 一个菜鸡的博客</title>
+    <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css?v=5.7.2">
+    <link rel="stylesheet" href="/lib/mdbootstrap/css/bootstrap.min.css?v=4.3.1">
+    <link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css?v=4.8.7">
+    <link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css">
+    <link rel="stylesheet" href="/lib/nprogress/nprogress.css?v=0.2.0">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+    
+        <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css">
+    
+    <link rel="stylesheet" href="/css/main.css">
+
+    
+</head>
+
+
+<body>
+<header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+<div class="container">
+    <a class="navbar-brand" href="/">&nbsp;<strong>一个菜鸡的博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-center">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="/archives/">Archives</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="/categories/">Categories</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="/tags/">Tags</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="/about/">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+</nav>
+    <div class="view intro-2"
+         style="background: url('/img/post.jpg')no-repeat center center;background-size: cover;">
+        <div class="full-bg-img">
+            <div class="mask rgba-black-light flex-center">
+                <div class="container text-center white-text wow fadeInUp">
+                    <span class="h2" id="subtitle">
+                        
+                    </span>
+                    
+                        <br>
+                        <p>星期五, 三月 1日 2019, 8:00 晚上</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    
+        
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="d-none d-lg-block col-lg-2"></div>
+            <div class="col-lg-8 nopadding-md">
+                <div class="py-5 z-depth-3 board">
+                    <div class="post-content mx-auto">
+                        <div class="markdown-body">
+                            <p>HGAME WRITEUP WEEK4——FzWjScJ<br>MISC<br><font size="8">0x01</font>Warmup<br>&emsp;&emsp;解压zip是一张gif图，然而并打不开……在多次烦出题人加上自己瞎倒腾之后(binwalk)知道了这是一个改了后缀的内存文件<del>（出题人真任性）</del>,然后得到了一个内存取证神器<code>mimikatz</code>，在短暂的学习文档后用了几个指令<code>log(登陆windows）</code>、<code>privilege::debug(获得权限）</code>、<code>sekurlsa::minidump 1.gif(模拟使用内存)</code>、<code>sekurlsa::logonPasswords(抓取密码)</code>,然后得到密码：<br><img src="https://i.imgur.com/wvPedIV.png" alt><br>&emsp;&emsp;再找一个加密网站加密成sha256就行，得到flag：<code>hgame{dd6dffcd56b77597157ac6c1beb514aa4c59d033098f806d88df89245824d3f5}</code>(随便吐槽一句，win10真厉害）</p>
+<hr>
+<p><font size="8">0x02</font>Clodown<br>&emsp;&emsp;解压后是2个G的mp4（大写的震惊，还以为老司机开车了），但是依旧打不开，吸取教训的我去binwalk了一波……结果跑了不知道多长时间易得又是一道内存取证题（日语草），在kali里好像有一个取证工具叫volatility,然后用<code>volatility -f memory.mp4 imageinfo</code>找到适用机型……但是并没找到，后面py出题人得到正确架构——Win7SP1x64（扫出来都是win8win10=。=）<br>&emsp;&emsp;然后开始第二步，查看SAM和System的注册表地址，输入指令<code>volatility -f memory.mp4 --profile=Win7SP1x64 hivelist</code>，找到两个地址<code>0xfffff8a003652010</code>和<code>0xfffff8a000024010</code><br><img src="https://i.imgur.com/6YItWBl.png" alt><br>&emsp;&emsp;进行查找用户密码的指令<code>volatility -f memory.mp4 --profile=Win7SP1x64 hashdump -y 0xfffff8a000024010 -s 0xfffff8a003652010</code>得到用户密码的哈希值：0bb8d932bbfee69fbc874214f39b1b67<br><img src="https://i.imgur.com/ZBWiAZI.png" alt><br>&emsp;&emsp;去网上找了个hash解密网站（并不会用hashcat=。=）解的密码：admin123456，再去用sha256加密一波得到flag：<code>hgame{ac0e7d037817094e9e0b4441f9bae3209d67b02fa484917065f71b16109a1a78}</code></p>
+<hr>
+<p><font size="8">0x03</font>暗藏玄机<br>&emsp;&emsp;ZIP解压后两个图片，百度了一下得知应该是盲水印然后去下了个工具试了试，得到flag：<code>hgame{h1de_in_THE_p1Cture}</code><br><img src="https://i.imgur.com/M7i3dEp.png" alt></p>
+
+                            <hr>
+                        </div>
+                        <br>
+                        <div>
+                            
+                            <p>
+                                <i class="iconfont icon-tag"></i>
+                                
+                                    <a class="hover-with-bg" href="/tags/HGAME">HGAME</a>
+                                
+                                    <a class="hover-with-bg" href="/tags/WEEK3">WEEK3</a>
+                                
+                            </p>
+                            
+                                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="d-none d-lg-block col-lg-2 toc-container">
+            
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i> Toc:</p> 
+    <div id="tocbot"></div>
+  </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+    <div class="container comments mx-auto" id="comments">
+        
+    </div>
+</div>
+    
+</main>
+
+<footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/0x2e/Material-T" target="_blank" rel="nofollow noopener"> <b>Material-T</b></a>
+    <br>
+    
+  </div>
+</footer>
+
+  <!-- SCRIPTS -->
+  <script src="/lib/mdbootstrap/js/jquery-3.4.1.min.js"></script>
+  <script src="/lib/mdbootstrap/js/popper.min.js"></script>
+  <script src="/lib/mdbootstrap/js/bootstrap.min.js?v=4.3.1"></script>
+  <script src="/lib/mdbootstrap/js/mdb.min.js?v=4.8.7"></script>
+  <script src="/lib/nprogress/nprogress.min.js?v=0.2.0"></script>
+  <script src="/js/main.js"></script>
+  
+    
+      <script src="/lib/tocbot/tocbot.min.js?v=4.7.0"></script>
+    
+    <script src="/js/post.js"></script>
+  
+  
+    <script src="/lib/prettify/prettify.min.js?v=0.1.0"></script>
+    <script>
+      $(document).ready(function(){
+        $('pre').addClass('prettyprint linenums');
+        prettyPrint();
+      })
+    </script>
+  
+  
+    <script src="/lib/typed/typed.min.js?v=2.0.9"></script>
+    <script>
+        var typed = new Typed('#subtitle', {
+          strings: [
+            '  ',
+            "Hgame--week4--菜鸡每天飞过&nbsp;",
+        ],
+        cursorChar: "_",
+        typeSpeed: 70,
+        startDelay: 300, //开始之前延迟300毫秒
+        loop: false,
+        });
+        $(".typed-cursor").addClass("h2");
+    </script>
+  
+  
+    <script src="/lib/anchor/anchor.min.js?v=4.2.0"></script>
+    <script>
+      anchors.options = {
+        placement: "right",
+        visible: "false",
+        
+      };
+      anchors.add(".post-content > h1,h2,h3,h4,h5,h6");
+    </script>
+  
+</body>
+</html>
